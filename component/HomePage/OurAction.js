@@ -26,7 +26,7 @@ export default function OurAction() {
             <div class="card border-0 mt-5 mb-5" style={{ background: '#3690C0' }}>
   <Image src="/images/015-Build-Blockchain.svg" class="" alt="..." width={80} height={80} />
   <div class="card-body">
-    <h5 class="card-title fs-2 text-white">Orchestratee</h5>
+    <h5 class="card-title fs-2 text-white">Orchestrate</h5>
     <p class="card-text text-white fs-5 fw-light">Functional governance systems that cause dynamic network effects, with nodes to actively address the needs of the vulnerable and enable human capital for emergency response.</p>
   </div>
 </div>

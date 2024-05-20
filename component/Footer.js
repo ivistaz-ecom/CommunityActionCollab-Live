@@ -34,12 +34,12 @@ function Footer() {
                 <li><Link href='/shilp' className='Menu_footer fs-6 fw-light'> Shilp</Link></li>
                 <li><Link href='/economic-resilience' className='Menu_footer fs-6 fw-light'> Economic Resilience</Link> </li>
                 <li><Link href='https://covidactioncollab.org/vaxnow/' className='Menu_footer fs-6 fw-light'>  Special Focus Areas (VaxNow)</Link> </li>
-                 <li> <Link href='/invest-for-change' className='Menu_footer fs-6 fw-light'> Invest For Impact</Link></li>
+                 <li> <Link href='/cac-investment-2024' className='Menu_footer fs-6 fw-light'> Invest For Impact 2024</Link></li>
               <li> <Link href='/contact-us' className='Menu_footer fs-6 fw-light'> Contact Us</Link></li>
             </ul>
             <Row className='d-flex flex-row'>
-              <Col className='text-start' lg={2} sm={2} xs={2} md={2}><Link href="#"><FaTwitterSquare size={30} className='f-icons'/></Link></Col>
-              <Col className='text-start' lg={2} sm={2} xs={2} md={2}><Link href="#"><FaLinkedin size={30} className='f-icons'/></Link></Col>
+              <Col className='text-start' lg={2} sm={2} xs={2} md={2}><Link href="https://twitter.com/CovActionCollab" target="_blank"><FaTwitterSquare size={30} className='f-icons'/></Link></Col>
+              <Col className='text-start' lg={2} sm={2} xs={2} md={2}><Link href="https://www.linkedin.com/showcase/community-action-collab/" target="_blank"><FaLinkedin size={30} className='f-icons'/></Link></Col>
             </Row>
             </Col>
             <Col lg={3}>

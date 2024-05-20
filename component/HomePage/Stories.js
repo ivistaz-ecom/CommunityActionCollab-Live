@@ -98,10 +98,10 @@ function HeroBanner() {
                             <div className="home-main">
                             <div class="card home-post" >
                             <div class="row g-0">
-                              <div class="col-md-5">
+                              <div class="col-md-6">
                                           <Image src={posts['_embedded']['wp:featuredmedia'][0]['source_url']} class="w-100 home-image" width={100} height={100} />
                               </div>
-                              <div class="col-md-7">
+                              <div class="col-md-6">
                                 <div class="card-body">
                                       <Link href={`/${posts['slug']}`} className="text-decoration-none text-black"><h5 class="card-title fs-6" dangerouslySetInnerHTML={{ __html: posts['title']['rendered'] }}/></Link> 
                                 </div>

@@ -17,7 +17,7 @@ function Banner() {
           <Col lg={2} className='border-end'>
         <CountUp
                   start={0}
-                  end={368}
+                  end={375}
                   separator=" "
                   prefix=""
                   suffix=""
@@ -28,7 +28,7 @@ function Banner() {
         <Col lg={2} className='border-end'>
         <CountUp
                   start={0}
-                  end={36}
+                  end={34}
                   separator=" "
                   prefix=""
                   suffix=""
@@ -61,24 +61,24 @@ function Banner() {
         <Col lg={2}>
         <CountUp
                   start={0}
-                  end={2}
+                  end={28}
                   separator=" "
                   prefix=""
-                  suffix=".8CR"
+                  suffix="M"
                   className="increment-impact"
             ></CountUp>
-            <p className='fs-4 fw-light'>Services Delivered</p>
+            <p className='fs-4 fw-light'>Services Instances</p>
         </Col>
         <Col lg={2} className='border-start'>
         <CountUp
                   start={0}
-                  end={1109}
+                  end={46}
                   separator=","
-                  prefix=""
-                  suffix="CR"
+                  prefix="$"
+                  suffix="M"
                   className="increment-impact"
             ></CountUp>
-            <p className='fs-4 fw-light'>Resources<br/>Mobilised</p>
+            <p className='fs-4 fw-light'>Resources<br/>Raised</p>
         </Col>
       </Row>
 

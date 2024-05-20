@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['beta.communityactioncollab.org'],
+      domains: ['docs.communityactioncollab.org'],
     },
   }
   

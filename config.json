@@ -1,5 +1,5 @@
 {
-    "SERVER_URL": "https://beta.communityactioncollab.org/wp-json/wp/v2/",
-    "SERVER_FROM": "https://beta.communityactioncollab.org/wp-json/"
+    "SERVER_URL": "https://docs.communityactioncollab.org/wp-json/wp/v2/",
+    "SERVER_FROM": "https://docs.communityactioncollab.org/wp-json/"
 
 }

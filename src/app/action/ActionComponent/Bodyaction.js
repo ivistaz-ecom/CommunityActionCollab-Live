@@ -34,7 +34,7 @@ function Bodyaction()  {
             <div className="card border-0" style={{ background: '#3690C0' }}>
   <Image src="/images/015-Build-Blockchain.svg" className="" alt="..." width={80} height={80} />
   <div className="card-body">
-    <h5 className="card-title fs-2 text-white">Orchestratee</h5>
+    <h5 className="card-title fs-2 text-white">Orchestrate</h5>
     <p className="card-text text-white fs-5 fw-light">Functional governance systems that cause dynamic network effects, with nodes to actively address the needs of the vulnerable and enable human capital for emergency response.</p>
   </div>
 </div>

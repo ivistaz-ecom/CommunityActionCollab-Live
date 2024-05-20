@@ -496,8 +496,8 @@ Send Message
             )}
 
 <Container className='mt-4 mb-5'>
- <p className='fs-5 '>Contact us at <Link href="mailto:ambika.cms@catalysts.org" className='main-color'>ambika.cms@catalysts.org</Link> or call us on <Link href="tel:+918605889659" className='main-color'>+91 8605 889 659</Link>
-to know more.</p>               
+ {/*<p className='fs-5 '>Contact us at <Link href="mailto:ambika.cms@catalysts.org" className='main-color'>ambika.cms@catalysts.org</Link> or call us on <Link href="tel:+918605889659" className='main-color'>+91 8605 889 659</Link>
+to know more.</p>*/}               
 </Container>
 
 </div>

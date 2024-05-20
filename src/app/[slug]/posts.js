@@ -10,6 +10,7 @@ import { FaTelegram, FaTwitter, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import configData from "../../../config.json";
 import Seo from '../../../component/SeoBlog'
 import PageNotFound from '../../../component/pageNotFound'
+import Script from 'next/script'
 
 
 
@@ -40,7 +41,7 @@ const Posts = ({ slug }) => {
         else {
           setData(result)
         }
-        //console.log(result);
+        console.log(result);
       } catch (error) {
         console.error("Error fetching data:", error.message);
       }
@@ -63,20 +64,46 @@ const Posts = ({ slug }) => {
 
   return (
     <>
+      <Header />
+      
       {data.map((item, index) => {
       
       return (
-        <Seo
-            title={item.title.rendered}
-            description={item.title.rendered}
-            path={slug}
-            metaImage={item.acf.banner_image.url}
-            key={index}
-        />
+        <head key={index}>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title >{item.acf.meta_title}</title>
+                <meta name="description" content={item.acf.meta_descriptions}/>
+                <meta name="robots" content="index,follow" />
+                <link rel="icon" href="/images/cac_favicon-150x150.png" />
+          <link rel="canonical" href={`https://communityactioncollab.org/${item.slug}`} />
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:type" content="website" />
+          <meta property="og:title" content={item.acf.meta_title} />
+                <meta property="og:description" content={item.acf.meta_descriptions} />
+          <meta property="og:url" content={`https://communityactioncollab.org/${item.slug}`} />
+                <meta property="og:site_name" content={item.acf.meta_title} />
+                <meta property="og:image" content={item.acf.banner_image.url} />
+                <meta name="twitter:card" content="summary_large_image" />
+                <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org/",
+                    "@type": "WebSite",
+                    "name": "Community Action Collab",
+                    "url": `https://communityactioncollab.org/`,
+                    "potentialAction": {
+                        "@type": "SearchAction",
+                        "target": `https://communityactioncollab.org/${item.slug}{search_term_string}`,
+                        "query-input": "required name=search_term_string"
+                    }
+                })}
+                </script>
+                
+            </head>
 
     );  
        } )}
-      <Header />
+     
       {data.map((item) => (
         <div key={item.id}>
           <Container fluid className="impact_post">

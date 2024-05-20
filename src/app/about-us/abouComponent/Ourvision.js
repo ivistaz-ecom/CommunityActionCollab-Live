@@ -49,16 +49,11 @@ function Ourvision() {
           <Col lg={9} sm={12} className="pt-5" id="vistion">
             <h2 className="t-vision fs-1 fw-light">Our Vision</h2>
             <p className="p-vision fs-5 fw-light">
-              A world that is resilient and invigorated. (Empowering the key
-              vulnerable communities to survive and thrive during humanitarian
-              crises)
+            The marginalised and vulnerable population are resilient to disruptions without compromising their long-term wellbeing.
             </p>
             <h2 className="t-vision fs-1 fw-light" id="vistion"> Our Mission </h2>
             <p className="p-vision fs-5 fw-light">
-              The Collaborative is incubated by the Catalyst Group, a social
-              impact platform with 26 years experience of working across 30
-              countries in social and economic development, including
-              humanitarian emergencies.
+            To support and empower civil society organisations in fostering continuous and harmonised systemic action necessary to build resilient communities.
             </p>
             <div className="row">
   <div className="col-sm-6 col-lg-4 col-xs-12 col-md-6 mt-3">

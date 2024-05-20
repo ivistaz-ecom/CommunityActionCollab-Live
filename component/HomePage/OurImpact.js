@@ -20,7 +20,7 @@ function OurImpact() {
             <Row className='d-flex flex-column'><Col>
           <CountUp
                   start={0}
-                  end={368}
+                  end={375}
                   separator=" "
                   prefix=""
                   suffix=""
@@ -35,10 +35,10 @@ function OurImpact() {
             <Row className='d-flex flex-column'><Col className='d-flex justify-content-center'>
           <CountUp
                   start={0}
-                  end={2}
+                  end={28}
                   separator=""
                   prefix=""
-                  suffix=".8CR"
+                  suffix="M"
                   className="increment"
             ></CountUp></Col><Col>
               <p className='fs-4 text-white text-center'>Service Instances</p></Col>
@@ -50,13 +50,13 @@ function OurImpact() {
             <Row className='d-flex flex-column'><Col className='d-flex justify-content-center'>
           <CountUp
                   start={0}
-                  end={36}
+                  end={34}
                   separator=" "
                   prefix=""
                   suffix=""
                   className="increment"
             ></CountUp></Col><Col>
-              <p className='fs-4 text-white text-center'>Across all States & Union Territories</p></Col>
+              <p className='fs-4 text-white text-center'>States &<br/>Union Territories</p></Col>
               </Row>
           </Col>
       </Row>

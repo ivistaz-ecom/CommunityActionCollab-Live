@@ -89,7 +89,7 @@ function HeroBanner() {
             <Row className="d-flex flex-column">
               <Col><img src="/images/cac_Logo.svg" width={214} height={50} className='img-fluid' /></Col>
               <Col><p className="fs-5 mt-3 mb-4">…is a dynamic humanitarian emergency platform that builds the resilience of Vulnerable People and their institutions, in their everyday emergencies, and is ready for future humanitarian crises.</p></Col>
-              <Col><Link href="/about" className='b-banner mb-5'> FIND OUT MORE</Link></Col>
+              <Col><Link href="/about-us" className='b-banner mb-5'> FIND OUT MORE</Link></Col>
             </Row>
             
             
