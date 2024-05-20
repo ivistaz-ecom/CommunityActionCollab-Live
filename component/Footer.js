@@ -4,7 +4,7 @@ import {Row,Col, Container, Card, Nav} from 'react-bootstrap'
 import Image from 'next/image';
 import {Icon} from 'react-bootstrap-icons';
 import Link from 'next/link';
-import { FaTwitterSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
 
@@ -38,7 +38,7 @@ function Footer() {
               <li> <Link href='/contact-us' className='Menu_footer fs-6 fw-light'> Contact Us</Link></li>
             </ul>
             <Row className='d-flex flex-row'>
-              <Col className='text-start' lg={2} sm={2} xs={2} md={2}><Link href="https://twitter.com/CovActionCollab" target="_blank"><FaTwitterSquare size={30} className='f-icons'/></Link></Col>
+              <Col className='text-start' lg={2} sm={2} xs={2} md={2}><Link href="https://twitter.com/CovActionCollab" target="_blank"><FaSquareXTwitter size={30} className='f-icons'/></Link></Col>
               <Col className='text-start' lg={2} sm={2} xs={2} md={2}><Link href="https://www.linkedin.com/showcase/community-action-collab/" target="_blank"><FaLinkedin size={30} className='f-icons'/></Link></Col>
             </Row>
             </Col>
