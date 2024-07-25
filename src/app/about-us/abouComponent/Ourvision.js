@@ -26,7 +26,7 @@ function Ourvision() {
     <>
       <Container fluid className="d-flex ">
         <Container>
-        <Row className="d-flex flex-column">
+        <Row className="d-flex flex-column flex-lg-row">
           <Col lg={3} >
             <Container className="sticky-top">
             <h3 className="title-s fs-5">IN THE SECTION</h3>
