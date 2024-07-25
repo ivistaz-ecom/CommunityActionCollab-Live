@@ -15,12 +15,12 @@ function PartnersAnchoring() {
         </Row>
         <Row>
         <Col>
-            <Image src="/images/virruti.png"  width={152} height={120} alt="virruti" className='mx-2'/>
-            <Image src="/images/skill.png"  width={152} height={120} alt="virruti" className='mx-2'/>
-            <Image src="/images/vital.png"  width={283} height={120} alt="virruti" className='mx-2'/>
-            <Image src="/images/Head.png"  width={231} height={120} alt="virruti" className='mx-2'/>
-            <Image src="/images/tri.png"  width={158} height={120} alt="virruti" className='mx-2'/>
-            <Image src="/images/gopabanadhu.png"  width={158} height={120} alt="virruti" className='mx-2'/>
+            <Image src="/images/virruti.png"  width={152} height={100} alt="virruti" className='mx-2'/>
+            <Image src="/images/skill.png"  width={152} height={100} alt="virruti" className='mx-2'/>
+            <Image src="/images/vital.png"  width={152} height={100} alt="virruti" className='mx-2'/>
+            <Image src="/images/Head.png"  width={152} height={100} alt="virruti" className='mx-2'/>
+            <Image src="/images/tri.png"  width={152} height={100} alt="virruti" className='mx-2'/>
+            <Image src="/images/gopabanadhu.png"  width={152} height={100} alt="virruti" className='mx-2'/>
             
             </Col>
         </Row>

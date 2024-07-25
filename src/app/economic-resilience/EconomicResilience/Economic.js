@@ -25,8 +25,8 @@ function Economic() {
         </Row>
 
         <Row>
-          <Col lg={10} className=" mt-5 Economic_Resilience_icon ">
-            <div className="card  d-flex flex-row border-0">
+          <Col lg={10} sm={12} xs={12} className="mt-5 Economic_Resilience_icon mx-auto">
+            <div className="card  d-lg-flex flex-lg-row border-0">
               <Image
                 src=" /images/icon_1_Why_Economic_Resilience-1.svg"
                 width={80}
@@ -44,7 +44,7 @@ function Economic() {
                 </p>
               </div>
             </div>
-            <div className="card   d-flex flex-row border-0">
+            <div className="card  d-lg-flex flex-lg-row border-0">
               <Image
                 src="/images/icon_2_Why_Economic_Resilience-1.svg-1.svg"
                 width={80}

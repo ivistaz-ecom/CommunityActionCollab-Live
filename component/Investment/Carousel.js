@@ -111,12 +111,12 @@ function Carousel() {
           </Container>
           <Container className='' >  
 <div id="carouselExample" class="carousel slide my-1" style={{background:'#fff'}}>
-  <div class="carousel-inner" >
+  <div class="carousel-inner" style={{ height: '660px' }}>
                     
                       
                       {actions.map((item, index) => (
-                          <div className={`carousel-item  ${index === 0 ? 'active' : ''}`} key={index}>
-                         <div className='row' >
+                          <div className={`carousel-item  ${index === 0 ? 'active' : ''}`} key={index} style={{ height: '100%' }}>
+                         <div className='row' style={{ height: '100%' }}>
                              <div className='col-lg-4 col-sm-12 d-flex align-items-center' >
                             <Image src={item.image} width={435} height={480}  className='img-fluid'/>
                              </div>
