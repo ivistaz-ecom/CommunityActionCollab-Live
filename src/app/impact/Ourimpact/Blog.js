@@ -1,9 +1,9 @@
-'use client'
-import React, { useEffect, useState } from 'react';
-import { Container, Row, Col, Tab, Nav, Button } from 'react-bootstrap';
-import Image from 'next/image';
-import Link from 'next/link';
-import { RotatingLines } from 'react-loader-spinner'
+"use client";
+import React, { useEffect, useState } from "react";
+import { Container, Row, Col, Tab, Nav, Button } from "react-bootstrap";
+import Image from "next/image";
+import Link from "next/link";
+import { RotatingLines } from "react-loader-spinner";
 import configData from "../../../../config.json";
 
 const Blog = () => {
@@ -16,24 +16,24 @@ const Blog = () => {
   const [morePostsAvailable, setMorePostsAvailable] = useState(true);
 
   const communities = [
-    { name: 'Covid-response', value: '44' },
-      { name: 'Factory unorganised workers', value: '11' },
-      { name: 'Fisherfolk', value: '39' },
-      { name: 'Gay men & Transgenders', value: '8' },
-      { name: 'Health workers', value: '14' },
-      { name: 'In & out of school children', value: '17' },
-      { name: 'Migrants', value: '16' },
-      { name: 'Organization', value: '55' },
-      { name: 'Person with disabilities', value: '9' },
-      { name: 'Persons Living with HIV', value: '51' },
-      { name: 'Sex workers', value: '10' },
-      { name: 'Small farmers', value: '13' },
-      { name: 'Street children', value: '15' },
-      { name: 'Street vendors', value: '12' },
-      { name: 'Tribals', value: '32' },
-      { name: 'Urban Poor', value: '35' },
-      { name: 'Vaccination', value: '43' },
-    ];
+    { name: "Covid-response", value: "44" },
+    { name: "Factory unorganised workers", value: "11" },
+    { name: "Fisherfolk", value: "39" },
+    { name: "Gay men & Transgenders", value: "8" },
+    { name: "Health workers", value: "14" },
+    { name: "In & out of school children", value: "17" },
+    { name: "Migrants", value: "16" },
+    { name: "Organization", value: "55" },
+    { name: "Person with disabilities", value: "9" },
+    { name: "Persons Living with HIV", value: "51" },
+    { name: "Sex workers", value: "10" },
+    { name: "Small farmers", value: "13" },
+    { name: "Street children", value: "15" },
+    { name: "Street vendors", value: "12" },
+    { name: "Tribals", value: "32" },
+    { name: "Urban Poor", value: "35" },
+    { name: "Vaccination", value: "43" },
+  ];
 
   const postFetch = async (pageNum = 1) => {
     const perPage = 10; // Number of posts per page
@@ -48,32 +48,31 @@ const Blog = () => {
 
     const response = await fetch(url);
     const newData = await response.json();
-    setLoader(false)
+    setLoader(false);
 
     // Check if there are more posts available
     if (newData.length < perPage) {
       setMorePostsAvailable(false);
-      
     }
 
     // Update state based on whether it's a new fetch or load more
-    setData((prevData) => (pageNum === 1 ? newData : [...prevData, ...newData]));
+    setData((prevData) =>
+      pageNum === 1 ? newData : [...prevData, ...newData]
+    );
     setPage(pageNum);
-    setLoading(false); 
+    setLoading(false);
   };
 
   const handleTabClick = (categoryId) => {
     setNewCat(categoryId);
     setMorePostsAvailable(true); // Reset the flag when switching categories
     postFetch();
-    
   };
 
   const handleLoadMore = () => {
     const nextPage = page + 1;
     postFetch(nextPage);
     setLoading(true);
-    
   };
 
   useEffect(() => {
@@ -84,48 +83,63 @@ const Blog = () => {
   return (
     <Container>
       <Row>
-      <Col lg={3} >
-            <Container className="sticky-top">
+        <Col lg={3}>
+          <Container className="sticky-top">
             <h3 className="title-s fs-5">IN THE SECTION</h3>
             <Tab.Container id="vertical-tabs-example" defaultActiveKey="home">
-      <Nav variant="fs-4" className="flex-column tab-about">
-        <Nav.Item >
-          <Nav.Link   className="t-tab fs-6 fw-light"  href="/impact">All Communities</Nav.Link>
-        </Nav.Item>
-               <Nav.Item>
-               {communities.map((community, index) => (
-                 <Link href="" className="t-tab nav-link fs-6 fw-light" key={index}
-                 onClick={() => handleTabClick(community.value)}
-                 >{community.name}</Link>
-                 ))}
-                    </Nav.Item>      
-      </Nav>
-    </Tab.Container>
+              <Nav variant="fs-4" className="flex-column tab-about">
+                <Nav.Item>
+                  <Nav.Link className="t-tab fs-6 fw-light" href="/impact">
+                    All Communities
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  {communities.map((community, index) => (
+                    <Link
+                      href=""
+                      className="t-tab nav-link fs-6 fw-light"
+                      key={index}
+                      onClick={() => handleTabClick(community.value)}
+                    >
+                      {community.name}
+                    </Link>
+                  ))}
+                </Nav.Item>
+              </Nav>
+            </Tab.Container>
+          </Container>
+        </Col>
 
-            </Container>
-          </Col>
-
-<Col lg={9} className='mt-5'>
-      <Row>
-      {data.map((item) => (
-        <Col key={item.id} sm={4}>
-
-        <Link href={`/${item.slug}`} className='text-decoration-none'>
-          <div className="card blog_card" >
-              <Image src={item['_embedded']['wp:featuredmedia']['0']['source_url']} className="card-img-top" alt="" width={300} height={300} />
-<div className="card-body">
-<h5 className="card-title" dangerouslySetInnerHTML={{__html:item.title.rendered}}/>
-
-
-</div>
-
-</div>
-</Link>
-          </Col>
-      ))}
+        <Col lg={9} className="mt-5">
+          <Row>
+            {data.map((item) => (
+              <Col key={item.id} sm={4}>
+                <Link href={`/${item.slug}`} className="text-decoration-none">
+                  <div className="card blog_card">
+                    <Image
+                      src={
+                        item["_embedded"]["wp:featuredmedia"]["0"]["source_url"]
+                      }
+                      className="card-img-top"
+                      alt=""
+                      width={300}
+                      height={300}
+                    />
+                    <div className="card-body">
+                      <h5
+                        className="card-title"
+                        dangerouslySetInnerHTML={{
+                          __html: item.title.rendered,
+                        }}
+                      />
+                    </div>
+                  </div>
+                </Link>
+              </Col>
+            ))}
           </Row>
-   {/* Loader */}
-   {loading && (
+          {/* Loader */}
+          {loading && (
             <div className="text-center mt-4">
               <RotatingLines
                 visible={true}
@@ -140,15 +154,15 @@ const Blog = () => {
               />
             </div>
           )}
-           {/* Load More Button */}
-           {morePostsAvailable && (
+          {/* Load More Button */}
+          {morePostsAvailable && (
             <div className="text-center mt-4 mb-5">
               <Button className="p-btn" onClick={handleLoadMore}>
                 Load More
               </Button>
             </div>
           )}
-    </Col>
+        </Col>
       </Row>
     </Container>
   );

@@ -936,11 +936,11 @@ span.right-arrow {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px!important;
+  height: 355px !important;
 }
 .Economic_Resilience {
   background-color: #2F7996;
-  padding: 60px 30px 0px 30px!important;
+  padding: 35px 30px 0px 30px!important;
 }
 h3.t-economic {
   color: #FFFFFF;
@@ -954,7 +954,7 @@ p.p-economic {
 
 .Economic_Resilience_icon{
   border: 2px solid #9DD3C3!important;
-  margin-left: 111px!important;
+  /* margin-left: 111px!important; */
   padding: 30px!important;
   border-radius: 10px!important;
 }
@@ -1051,7 +1051,26 @@ mark {
   background: linear-gradient(90deg, #FDE07C 50%, rgba(255, 255, 255, 0) 50%);
   background-size: 200% 100%;
   background-position: 100% 0;
+  
 }
+.highlighted-text {
+  display: flex;
+  align-items: center; /* Vertically center align */
+  /* background-color: #FDE07C; */
+  padding: 5px; /* Adjust padding as needed */
+}
+
+.highlight {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height for better readability */
+}
+@media (max-width: 767px) {
+  .btn-tab {
+      width: 100%;
+      margin: 5px 0;
+  }
+}
+
 
 @-webkit-keyframes highlight {
   to {
@@ -1950,4 +1969,27 @@ li button {
   -moz-border-radius: 100px !important;
   -ms-border-radius: 100px !important;
   -o-border-radius: 100px !important;
+}
+
+
+.btn-tab {
+  background-color: white;
+  border: 1px solid rgb(98, 98, 98) !important;
+  padding: 10px 20px;
+  margin: 5px;
+  flex: 1;
+  text-align: center;
+}
+
+.btn-tab.active {
+  background-color: rgb(72, 70, 70);
+  color: white;
+}
+
+.d-flex {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
 }

@@ -33,7 +33,7 @@ function Ourvision() {
             <Tab.Container id="vertical-tabs-example" defaultActiveKey="home">
       <Nav variant="fs-4" className="flex-column tab-about">
         <Nav.Item >
-          <Nav.Link   className="t-tab fs-6 fw-light" eventKey="home" href="#vistion">Our Mission</Nav.Link>
+          <Nav.Link   className="t-tab fs-6 fw-light" eventKey="home" href="#vision">Our Mission</Nav.Link>
         </Nav.Item>
         <Nav.Item >
           <Nav.Link className="t-tab fs-6 fw-light" eventKey="profile" href="#partners">Our Partners</Nav.Link>
@@ -46,7 +46,7 @@ function Ourvision() {
 
             </Container>
           </Col>
-          <Col lg={9} sm={12} className="pt-5" id="vistion">
+          <Col lg={9} sm={12} className="pt-5" id="vision">
             <h2 className="t-vision fs-1 fw-light">Our Vision</h2>
             <p className="p-vision fs-5 fw-light">
             The marginalised and vulnerable population are resilient to disruptions without compromising their long-term wellbeing.
