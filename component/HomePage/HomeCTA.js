@@ -10,8 +10,8 @@ function HomeCTA() {
   return (
     <>
       <Container fluid className='cta-banner'>
-        <Container className='mt-5'>
-          <Row className='d-flex flex-lg-row'>
+        <Container className=''>
+          <Row className='d-lg-flex flex-lg-row'>
             <Col className='order-1 order-lg-0' lg={4} sm={6} md={6} xs={6}>
             <Image src="/images/man.png" width={400} height={550} className='img-fluid'/>
             </Col>
