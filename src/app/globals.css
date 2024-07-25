@@ -2001,10 +2001,10 @@ li button {
 
 @media (max-width: 767.98px) {
   .card {
-    display: none; /* Hide card elements on mobile view */
+    display: none; 
   }
   .triangle-right, .triangle-right-1 {
-    display: none; /* Hide triangle elements on mobile view */
+    display: none;  
   }
   .outcomebox {
     background-color: #FEF2A8 !important;
