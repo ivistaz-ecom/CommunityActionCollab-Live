@@ -22,10 +22,10 @@ function Content() {
                       <Image src="/images/impact-banner.png" width={300} height={300}/>
                   </Col></Row>
           </Container>
-          <Container className='i-banner mt-5'>
+          <Container className='i-banner mt-5 mx-auto'>
               <p className='fs-5'>We’re working towards an equitable tomorrow. When you invest in CAC, you are investing in a <b>360+</b> strong network of organisations that make changes happen. Enabling the most vulnerable people to survive any humanitarian crises and thrive through collaborative action.</p>
           </Container>
-          <Container className='i-banner mt-5'>
+          <Container className='i-banner mt-5 mx-auto'>
               <Row>
                   <Col>
                   <div className="card mb-3 border-0" style={{background:'#ffffff00'}}>
