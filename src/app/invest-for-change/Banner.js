@@ -8,13 +8,18 @@ function Banner() {
       <Container>
         <Row>
           <Col>
-            <h1 className="fs-41 fw-bolder">
+            <h1 className="d-none d-sm-block fw-bolder" style={{fontSize:"78px"}}>
+              Catalysing
+              <br />
+              Change
+            </h1>
+            <h1 className="d-block d-sm-none fw-bolder" style={{fontSize:"50px"}}>
               Catalysing
               <br />
               Change
             </h1>
           </Col>
-          <Col className="pt-5">
+          <Col className="pt-lg-5 pb-lg-0 pb-3">
             <div className="highlighted-text">
               <mark className="highlight">
                 Create sustainable impact by investing in our humanitarian
