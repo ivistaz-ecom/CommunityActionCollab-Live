@@ -2002,6 +2002,7 @@ li button {
 @media (max-width: 767.98px) {
   .card {
     display: none; 
+
   }
   .triangle-right, .triangle-right-1 {
     display: none;  
