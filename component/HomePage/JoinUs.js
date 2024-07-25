@@ -42,7 +42,8 @@ function JoinUs() {
             Volunteer With Us
             </h2>
             <p className='p-volunteer pt-4 fs-5 fw-light'>We invite stellar, driven and passionate volunteers who’d like to contribute to resilience building within vulnerable communities.</p>
-            <p className='mail-us fs-5'>WRITE TO US AT <a href='mailto:COMMUNITYACTIONCOLLAB@CATALYSTS.ORG'>COMMUNITYACTIONCOLLAB@CATALYSTS.ORG</a></p>
+            <p className='mail-us fs-5 mb-0'>Write to us at</p>
+            <a href='mailto:COMMUNITYACTIONCOLLAB@CATALYSTS.ORG'>communityactioncollab@catalysts.org</a>    
         </Col>
         <Col lg={6} className='volunteer order-0'>
            
