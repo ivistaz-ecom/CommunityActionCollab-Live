@@ -23,10 +23,11 @@ function Footer() {
                 <li><Link href='/about-us' className='Menu_footer fs-6 fw-light'> About Us</Link></li>
                 <li><Link href='/about-us#vistion' className='Menu_footer fs-6 fw-light'>Our Mission </Link>
                 </li>
-                <li><Link href='/about-us' className='Menu_footer fs-6 fw-light'>What Is Community Action Collab?</Link> </li>
+                {/* <li><Link href='/about-us' className='Menu_footer fs-6 fw-light'>What Is Community Action Collab?</Link> </li> */}
                 <li> <Link href='/resource-hub#media' className='Menu_footer fs-6 fw-light'>Media</Link></li>
                 <li> <Link href='/impact' className='Menu_footer fs-6 fw-light'>Our Impact</Link></li>
                 <li><Link href='/action' className='Menu_footer fs-6 fw-light'> Our Action</Link> </li>
+                
               </ul>
             </Col>
             <Col>
@@ -35,7 +36,6 @@ function Footer() {
                 <li><Link href='/economic-resilience' className='Menu_footer fs-6 fw-light'> Economic Resilience</Link> </li>
                 <li><Link href='https://covidactioncollab.org/vaxnow/' className='Menu_footer fs-6 fw-light'>  Special Focus Areas (VaxNow)</Link> </li>
                  <li> <Link href='/invest-for-impact-2024' className='Menu_footer fs-6 fw-light'> Invest For Impact 2024</Link></li>
-              <li> <Link href='/contact-us' className='Menu_footer fs-6 fw-light'> Contact Us</Link></li>
             </ul>
             <Row className='d-flex flex-row'>
               <Col className='text-start' lg={2} sm={2} xs={2} md={2}><Link href="https://x.com/CommActCollab" target="_blank"><FaSquareXTwitter size={30} className='f-icons'/></Link></Col>
