@@ -14,7 +14,7 @@ function Footer() {
   return (
     <>
      <Container className='footer-cs text-center pt-4 pb-4' fluid>
-        <Row className='d-flex flex-row'>
+        <Row className=''>
             <Col lg={2}>
             </Col>
             <Col className='' >
