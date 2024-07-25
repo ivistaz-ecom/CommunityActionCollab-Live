@@ -31,7 +31,7 @@ export default function OurAction() {
   </div>
 </div>
 </Col>
-<Col className='triangle-right d-lg-block' lg={1}></Col>
+<Col className='triangle-right' lg={1}></Col>
 <Col style={{ background: '#FDD700' }} className='' sm={12} lg={3}>
               
             <div class="card border-0 mt-5 mb-5" style={{ background: '#FDD700' }}>
@@ -42,7 +42,7 @@ export default function OurAction() {
   </div>
 </div>
 </Col>
-<Col className='triangle-right-1 d-lg-block' lg={1}></Col>
+<Col className='triangle-right-1' lg={1}></Col>
             <Col style={{ background: '#272727' }} className='' sm={12} lg={3}>
               
             <div class="card border-0 mt-5 mb-5" style={{ background: '#272727' }}>
