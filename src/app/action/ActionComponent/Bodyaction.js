@@ -83,18 +83,18 @@ function Bodyaction()  {
             <h2 className="t-vision fs-2">Outcomes</h2>
     </Col>
   </Row>
-  <Row>
-        <Col sm className='outcomebox  d-flex align-items-center'>
+  <Row className=''>
+        <Col  sm className='outcomebox  d-flex align-items-center'>
           <p className='p_outcomes fs-6'>
           Enable at least 10 million vulnerable people to experience resilience in their lives and livelihoods.
           </p>
         </Col>
-        <Col  sm className='outcomebox d-flex align-items-center' >
+        <Col  sm className='outcomebox d-flex align-items-center ' >
         <p className='p_outcomes fs-6'>
           Enable at least 100 vulnerable people-focused organisations to become resilient to future humanitarian tragedies.
           </p>
         </Col>
-        <Col sm className='outcomebox d-flex align-items-center'>
+        <Col  sm className='outcomebox d-flex align-items-center'>
         <p className='p_outcomes fs-6'>
           Create a ‘spring to action’ ready resourced platform available to respond to emergencies present in key vulnerable districts.
           </p>
