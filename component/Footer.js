@@ -14,7 +14,7 @@ function Footer() {
   return (
     <>
      <Container className='footer-cs text-center pt-4 pb-4' fluid>
-        <Row>
+        <Row className='d-flex flex-row'>
             <Col lg={2}>
             </Col>
             <Col className='' >
@@ -36,6 +36,7 @@ function Footer() {
                 <li><Link href='/economic-resilience' className='Menu_footer fs-6 fw-light'> Economic Resilience</Link> </li>
                 <li><Link href='https://covidactioncollab.org/vaxnow/' className='Menu_footer fs-6 fw-light'>  Special Focus Areas (VaxNow)</Link> </li>
                  <li> <Link href='/invest-for-impact-2024' className='Menu_footer fs-6 fw-light'> Invest For Impact 2024</Link></li>
+                 <li><Link className='Menu_footer fs-6 fw-light' href="https://www.precisionhealth.in/" target='_blank'>Precision Health</Link></li>
             </ul>
             <Row className='d-flex flex-row'>
               <Col className='text-start' lg={2} sm={2} xs={2} md={2}><Link href="https://x.com/CommActCollab" target="_blank"><FaSquareXTwitter size={30} className='f-icons'/></Link></Col>
@@ -53,10 +54,13 @@ function Footer() {
         </Row>
 
         </Container> 
+        
+        {/* copyright  */}
         <Container fluid>
         <Row>
           <Col className='bg-copy'>
-             <p className='p_copy'>Copyright © {year} Catalyst Management Services Pvt. Ltd.</p>
+             <p className='p_copy'>Copyright © {year} <br className='d-block d-sm-none' /> Catalyst Management Services Pvt. Ltd.</p>
+             {/* <p className='p_copy d-block d-sm-none'>Copyright © {year} <p>Catalyst Management Services Pvt. Ltd.</p></p> */}
           </Col>
         </Row>
         </Container>

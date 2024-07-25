@@ -26,39 +26,38 @@ function Bodyaction()  {
           </row>
       </Container>
       
-      <Container fluid style={{     background: 'linear-gradient(90deg, #3690C0 0%, #3690C0 50%, #272727 50%)' }}>
-        <Container>
+      <Container fluid  className='g-0 gradient'>
+        <Container fluid>
           <Row>
             
-            <Col  style={{ background: '#3690C0' }} className='p-4'>      
-            <div className="card border-0" style={{ background: '#3690C0' }}>
-  <Image src="/images/015-Build-Blockchain.svg" className="" alt="..." width={80} height={80} />
-  <div className="card-body">
-    <h5 className="card-title fs-2 text-white">Orchestrate</h5>
-    <p className="card-text text-white fs-5 fw-light">Functional governance systems that cause dynamic network effects, with nodes to actively address the needs of the vulnerable and enable human capital for emergency response.</p>
+            <Col style={{ background: '#3690C0' }} className='' sm={12} lg={3}>      
+            <div class="card border-0 mt-5 mb-5" style={{ background: '#3690C0' }}>
+  <Image src="/images/015-Build-Blockchain.svg" class="" alt="..." width={80} height={80} />
+  <div class="card-body">
+    <h5 class="card-title fs-2 text-white">Orchestrate</h5>
+    <p class="card-text text-white fs-5 fw-light">Functional governance systems that cause dynamic network effects, with nodes to actively address the needs of the vulnerable and enable human capital for emergency response.</p>
   </div>
 </div>
 </Col>
-            <Col className='triangle-right' lg={1}></Col>
-            
-            <Col style={{ background: '#FDD700' }} className='p-4'>
+<Col className='triangle-right d-none d-lg-block' lg={1}></Col>
+<Col style={{ background: '#FDD700' }} className='' sm={12} lg={3}>
               
-            <div className="card border-0" style={{ background: '#FDD700' }}>
-  <Image src="/images/influencer.svg" className="" alt="..." width={80} height={80} />
-  <div className="card-body">
-    <h5 className="card-title fs-2">Influence</h5>
-    <p className="card-textc fs-5 fw-light">Significant policy and practice changes. Amplify components/issues through global collaboration.</p>
+            <div class="card border-0 mt-5 mb-5" style={{ background: '#FDD700' }}>
+  <Image src="/images/influencer.svg" class="" alt="..." width={80} height={80} />
+  <div class="card-body">
+    <h5 class="card-title fs-2">Influence</h5>
+    <p class="card-text fs-5 fw-light">Significant policy and practice changes. Amplify components/issues through global collaboration.</p>
   </div>
 </div>
-
-            </Col>
-            <Col className='triangle-right-1' lg={1}></Col>
-            <Col style={{ background: '#272727' }} className='p-4'>        
-            <div className="card border-0" style={{ background: '#272727' }}>
-  <Image src="/images/business-and-finance.svg" className="" alt="..." width={80} height={80} />
-  <div className="card-body">
-    <h5 className="card-title fs-2 text-white">Solve</h5>
-    <p className="card-text text-white fs-5 fw-light">Scalable solutions, response time and district level integrated action.</p>
+</Col>
+<Col className='triangle-right-1 d-none d-lg-block' lg={1}></Col>
+            <Col style={{ background: '#272727' }} className='' sm={12} lg={3}>
+              
+            <div class="card border-0 mt-5 mb-5" style={{ background: '#272727' }}>
+  <Image src="/images/business-and-finance.svg" class="" alt="..." width={80} height={80} />
+  <div class="card-body">
+    <h5 class="card-title fs-2 text-white">Solve</h5>
+    <p class="card-text text-white fs-5 fw-light">Scalable solutions, response time and district level integrated action.</p>
   </div>
 </div>
 
@@ -69,7 +68,7 @@ function Bodyaction()  {
         
 
 
-</Container>
+      </Container>
 
 
 
@@ -83,18 +82,18 @@ function Bodyaction()  {
             <h2 className="t-vision fs-2">Outcomes</h2>
     </Col>
   </Row>
-  <Row>
-        <Col sm className='outcomebox  d-flex align-items-center'>
+  <Row className=''>
+        <Col  sm className='outcomebox  d-flex align-items-center'>
           <p className='p_outcomes fs-6'>
           Enable at least 10 million vulnerable people to experience resilience in their lives and livelihoods.
           </p>
         </Col>
-        <Col  sm className='outcomebox d-flex align-items-center' >
+        <Col  sm className='outcomebox d-flex align-items-center ' >
         <p className='p_outcomes fs-6'>
           Enable at least 100 vulnerable people-focused organisations to become resilient to future humanitarian tragedies.
           </p>
         </Col>
-        <Col sm className='outcomebox d-flex align-items-center'>
+        <Col  sm className='outcomebox d-flex align-items-center'>
         <p className='p_outcomes fs-6'>
           Create a ‘spring to action’ ready resourced platform available to respond to emergencies present in key vulnerable districts.
           </p>

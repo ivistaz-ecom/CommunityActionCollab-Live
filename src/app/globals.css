@@ -1126,7 +1126,7 @@ p.p-cardshilp {
 
   .outcomebox {
     background-color: #FEF2A8;
-    margin-left: 20px;
+    margin-left: 10px;
     height: 150px;
 }
 .p_outcomes {
@@ -1997,4 +1997,18 @@ li button {
 
 .flex-wrap {
   flex-wrap: wrap !important;
+}
+
+@media (max-width: 767.98px) {
+  .card {
+    display: none; /* Hide card elements on mobile view */
+  }
+  .triangle-right, .triangle-right-1 {
+    display: none; /* Hide triangle elements on mobile view */
+  }
+  .outcomebox {
+    background-color: #FEF2A8 !important;
+    margin-left: 0 !important;
+    height: 150px !important;
+}
 }
