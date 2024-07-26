@@ -62,7 +62,7 @@ function FrameworkAccordion() {
                         </p>
                       </div>
                     </div>
-                    <div className="card   d-flex flex-row border-0">
+                    <div className="card   d-flex flex-lg-row border-0">
                       <Image
                         src="/images/Protect_icon-1.svg"
                         width={40}
@@ -86,7 +86,7 @@ function FrameworkAccordion() {
               </Accordion.Item>
               <Accordion.Item eventKey="1">
                 <Accordion.Header onClick={() => handleAccordionToggle("1")}>
-                  <div className="card d-flex flex-row border-0">
+                  <div className="card d-flex flex-lg-row border-0">
                     <Image
                       src="/images/Diversification.svg"
                       width={60}
@@ -105,7 +105,7 @@ function FrameworkAccordion() {
                 </Accordion.Header>
                 <Accordion.Body>
                   <Col  className=" ">
-                    <div className="card d-flex flex-row border-0">
+                    <div className="card d-flex flex-lg-row border-0">
                       <Image
                         src=" /images/help_the_family_save_and_build_icon-1.svg"
                         width={40}
@@ -124,7 +124,7 @@ function FrameworkAccordion() {
                         </p>
                       </div>
                     </div>
-                    <div className="card   d-flex flex-row border-0">
+                    <div className="card   d-flex flex-lg-row border-0">
                       <Image
                         src="/images/help_the_family_icon-1.svg"
                         width={40}
@@ -147,7 +147,7 @@ function FrameworkAccordion() {
               </Accordion.Item>
               <Accordion.Item eventKey="2">
                 <Accordion.Header onClick={() => handleAccordionToggle("2")}>
-                  <div className="card d-flex flex-row border-0">
+                  <div className="card d-flex flex-lg-row border-0">
                     <Image
                       src="/images/Aggregation.svg"
                       width={60}
@@ -166,7 +166,7 @@ function FrameworkAccordion() {
                 </Accordion.Header>
                 <Accordion.Body>
                   <Col  className=" ">
-                    <div className="card d-flex flex-row border-0">
+                    <div className="card d-flex flex-lg-row border-0">
                       <Image
                         src=" /images/Aggregation-and-organisation-around-production-1.svg"
                         width={40}
@@ -184,7 +184,7 @@ function FrameworkAccordion() {
                         </p>
                       </div>
                     </div>
-                    <div className="card   d-flex flex-row border-0">
+                    <div className="card   d-flex flex-lg-row border-0">
                       <Image
                         src="/images/Collective-identity-around-social-groupings-1.svg"
                         width={40}
@@ -203,7 +203,7 @@ function FrameworkAccordion() {
                       </div>
                     </div>
 
-                    <div className="card   d-flex flex-row border-0">
+                    <div className="card   d-flex flex-lg-row border-0">
                       <Image
                         src="/images/Collective-voices.svg"
                         width={40}
@@ -224,7 +224,7 @@ function FrameworkAccordion() {
               </Accordion.Item>
               <Accordion.Item eventKey="3">
                 <Accordion.Header onClick={() => handleAccordionToggle("3")}>
-                  <div className="card d-flex flex-row border-0">
+                  <div className="card d-flex flex-lg-row border-0">
                     <Image
                       src="/images/Risk_Pooling.svg"
                       width={60}
@@ -243,7 +243,7 @@ function FrameworkAccordion() {
                 </Accordion.Header>
                 <Accordion.Body>
                   <Col  className=" ">
-                    <div className="card d-flex flex-row border-0">
+                    <div className="card d-flex flex-lg-row border-0">
                       <Image
                         src=" /images/Set-up-informal-insurance_mechanisms.svg"
                         width={40}
@@ -260,7 +260,7 @@ function FrameworkAccordion() {
                         </p>
                       </div>
                     </div>
-                    <div className="card   d-flex flex-row border-0">
+                    <div className="card   d-flex flex-lg-row border-0">
                       <Image
                         src="/images/Set-up-formal-insurance-mechanisms.svg"
                         width={40}
