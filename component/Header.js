@@ -253,7 +253,7 @@ function Header() {
                       Resource Hub
                     </a>
                     <ul className="dropdown-menu">
-                      <li><Link className='dropdown-item fs-6' href="/resource-hub/#base">Knowledgebase</Link></li>
+                      <li><Link className='dropdown-item fs-6' href="/resource-hub/#base"onClick={closeOffcanvas}>Knowledgebase</Link></li>
                       <li><hr className="dropdown-divider" /></li>
                       <li><Link className='dropdown-item fs-6' href="/resource-hub/#media" onClick={closeOffcanvas}>Media</Link></li>
                     </ul>
