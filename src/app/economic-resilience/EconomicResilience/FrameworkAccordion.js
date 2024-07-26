@@ -21,12 +21,12 @@ function FrameworkAccordion() {
             <h2 className="fs-1 fw-light mb-2">CDAR Framework</h2>
           </Col>
         </Row>
-        <Row className=" d-flex justify-content-center">
+        <Row className="d-flex justify-content-center">
           <Col lg="">
             <Accordion activeKey={activeKey}className="mx-auto container">
               <Accordion.Item eventKey="0">
                 <Accordion.Header onClick={() => handleAccordionToggle("0")}>
-                  <div className="card d-flex flex-row border-0">
+                  <div className="card d-flex flex-lg-row border-0">
                     <Image
                       src="/images/Conservation_icon-1.svg"
                       width={60}
@@ -45,7 +45,7 @@ function FrameworkAccordion() {
                 </Accordion.Header>
                 <Accordion.Body>
                   <Col  className=" ">
-                    <div className="card d-flex flex-row border-0">
+                    <div className="card d-flex flex-lg-row border-0">
                       <Image
                         src=" /images/icon_Reduce_expenses-1.svg"
                         width={40}

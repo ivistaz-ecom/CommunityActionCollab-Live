@@ -78,7 +78,7 @@ function Knowledgebase() {
             </Card>
           </Col>
           <Col lg={4} sm={6}>
-            <Card className="mx-5 border-0 text-center known-card mt-4">
+            <Card className="mx-5 border-0 text-center known-card mt-lg-4">
               <Card.Body>
                 <Card.Title className="fs-5 fw-light mb-4 main-color">
                   Research Paper | Drivers of vaccine hesitancy among vulnerable
