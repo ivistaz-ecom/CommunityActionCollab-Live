@@ -30,7 +30,7 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -51,7 +51,7 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -72,7 +72,7 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -89,7 +89,7 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -110,7 +110,70 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
+                </Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} sm={6}>
+            <Card className=" border-0 text-center mt-4">
+              <Card.Img
+                variant="top"
+                className="img-know"
+                src="/images/CAC-KnowledgeBaseBanner–2.png"
+              />
+              <Card.Body>
+                <Card.Title className="fs-5 fw-light mb-4 main-color">
+                FINAL - ENG - 20th AUG 2024 Rainy Season
+                </Card.Title>
+                <Link
+                  href="/FINAL - ENG - Rainy Season_A4_ 2024_English_v2 (1).pdf"
+                  target="_blank"
+                  className="btn-know"
+                >
+                  Know More
+                </Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} sm={6}>
+            <Card className=" border-0 text-center mt-4">
+              <Card.Img
+                variant="top"
+                className="img-know"
+                src="/images/CAC-KnowledgeBaseBanner–2.png"
+              />
+              <Card.Body>
+                <Card.Title className="fs-5 fw-light mb-4 main-color">
+                FINAL - Hindi - 20th AUG 2024 Rainy Season
+                </Card.Title>
+                <Link
+                  href="/FINAL - Hindi - Rainy Season_A4_ 20th AUG 2024_Hindi_v2 (1) (1).pdf"
+                  target="_blank"
+                  className="btn-know"
+                >
+                  Know More
+                </Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} sm={6}>
+            <Card className=" border-0 text-center mt-4">
+              <Card.Img
+                variant="top"
+                className="img-know"
+                src="/images/CAC-KnowledgeBaseBanner–2.png"
+              />
+              <Card.Body>
+                <Card.Title className="fs-5 fw-light mb-4 main-color">
+                FINAL - Assamese - 20th AUG 2024 Rainy Season
+                </Card.Title>
+                <Link
+                  href="/FINAL - Assamese - 20th AUG 2024 Rainy Season_.pdf"
+                  target="_blank"
+                  className="btn-know"
+                >
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -142,7 +205,7 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -164,7 +227,7 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -186,7 +249,7 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -211,7 +274,7 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -233,7 +296,7 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -255,7 +318,7 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
@@ -277,11 +340,12 @@ function Knowledgebase() {
                   target="_blank"
                   className="btn-know"
                 >
-                  Know More{" "}
+                  Know More
                 </Link>
               </Card.Body>
             </Card>
           </Col>
+          
         </Row>
       </Container>
     </>
