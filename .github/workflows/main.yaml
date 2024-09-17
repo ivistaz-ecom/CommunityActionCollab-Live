@@ -11,7 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy Staging CMS
+      - name: Deploy Staging Community Action Collab
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }} # Your server's IP address
