@@ -55,7 +55,7 @@ function Header() {
               <Link className='me-4 nav-link fs-6' href="/join-us">Join Us</Link>
               </li>
               <li className="nav-item">
-              <Link className='me-4 nav-link fs-6' href="/contact-us">Contact</Link>
+              <Link className='me-4 nav-link fs-6' href="/contact-us">Contact Us</Link>
         </li>
       </ul>
     </div>
