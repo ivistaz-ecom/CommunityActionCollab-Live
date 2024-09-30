@@ -32,6 +32,7 @@ function Footer() {
             </Col>
             <Col>
                 <ul className='footer-1 pt-5'>
+                <li><Link target='_blank' href='https://social-protection.communityactioncollab.org/' className='Menu_footer fs-6 fw-light'> Social Protection</Link></li>
                 <li><Link href='/shilp' className='Menu_footer fs-6 fw-light'> Shilp</Link></li>
                 <li><Link href='/economic-resilience' className='Menu_footer fs-6 fw-light'> Economic Resilience</Link> </li>
                 <li><Link href='https://covidactioncollab.org/vaxnow/' className='Menu_footer fs-6 fw-light'>  Special Focus Areas (VaxNow)</Link> </li>
