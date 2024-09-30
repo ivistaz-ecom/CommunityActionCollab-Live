@@ -32,6 +32,8 @@ function Header() {
           Our Initiatives
           </a>
                 <ul className="dropdown-menu">
+                  <li><Link target='_blank' className='dropdown-item fs-6' href="http://social-protection.communityactioncollab.org/">Social Protection</Link></li>
+                  <li><hr class="dropdown-divider"/></li>
                   <li><Link className='dropdown-item fs-6' href="/shilp">SHILP</Link></li>
                   <li><hr class="dropdown-divider"/></li>
                   <li><Link className='dropdown-item fs-6' href="/economic-resilience">Economic resilience</Link></li>
@@ -55,7 +57,7 @@ function Header() {
               <Link className='me-4 nav-link fs-6' href="/join-us">Join Us</Link>
               </li>
               <li className="nav-item">
-              <Link className='me-4 nav-link fs-6' href="/contact-us">Contact Us</Link>
+              <Link className='me-4 nav-link fs-6' href="/contact-us">Contact Us                  </Link>
         </li>
       </ul>
     </div>
@@ -91,6 +93,8 @@ function Header() {
           Our Initiatives
           </a>
                 <ul className="dropdown-menu">
+                  <li><Link target='_blank' className='dropdown-item fs-6' href="http://social-protection.communityactioncollab.org/">Social Protection</Link></li>
+                  <li><hr class="dropdown-divider"/></li>
                   <li><Link className='dropdown-item fs-6' href="/shilp">SHILP</Link></li>
                   <li><hr class="dropdown-divider"/></li>
                   <li><Link className='dropdown-item fs-6' href="/economic-resilience">Economic resilience</Link></li>
