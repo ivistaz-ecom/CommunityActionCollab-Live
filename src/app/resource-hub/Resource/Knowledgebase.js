@@ -3,6 +3,12 @@ import Image from "next/image";
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Link from "next/link";
+import CarouselForHeat from "../CarouselForHeat/carousel";
+import CarouselForRainy from "../CarouselForRainy/carousel";
+import CarouselForWinter from "../CarouselForWinter/carousel";
+import CarouselForMonsoon2023 from "../CarouselForMonsoon2023/carousel";
+import CarouselForRainReady from "../CarouselForRainReady/carousel";
+import CarouselForHeatAdvisory from "../CarouselForHeatAdvisory/carousel";
 
 function Knowledgebase() {
   return (
@@ -57,25 +63,7 @@ function Knowledgebase() {
             </Card>
           </Col>
           <Col lg={4} sm={6}>
-            <Card className=" border-0 text-center">
-              <Card.Img
-                variant="top"
-                className="img-know"
-                src="/images/advisory-1.png"
-              />
-              <Card.Body>
-                <Card.Title className="fs-5 fw-light mb-4 main-color">
-                  Climate Advisory 2023 | Monsoon
-                </Card.Title>
-                <Link
-                  href="/Swasti-Monsoon-Pocket-Book-English-40-pages-Final-November-2023.pdf"
-                  target="_blank"
-                  className="btn-know"
-                >
-                  Know More
-                </Link>
-              </Card.Body>
-            </Card>
+            <CarouselForMonsoon2023 />
           </Col>
           <Col lg={4} sm={6}>
             <Card className="mx-5 border-0 text-center known-card mt-lg-4">
@@ -116,18 +104,27 @@ function Knowledgebase() {
             </Card>
           </Col>
           <Col lg={4} sm={6}>
+            <CarouselForRainReady />
+          </Col>
+         
+
+          <Col lg={4} sm={6}>
+            <CarouselForHeat />
+          </Col>
+
+          <Col lg={4} sm={6}>
             <Card className=" border-0 text-center mt-4">
               <Card.Img
                 variant="top"
                 className="img-know"
-                src="/images/CAC-KnowledgeBaseBanner–2.png"
+                src="/images/heat-advisory.png"
               />
               <Card.Body>
                 <Card.Title className="fs-5 fw-light mb-4 main-color">
-                FINAL - ENG - 20th AUG 2024 Rainy Season
+                  Heat Toon Advisory English 2024
                 </Card.Title>
                 <Link
-                  href="/FINAL - ENG - Rainy Season_A4_ 2024_English_v2 (1).pdf"
+                  href="/Heat Toon Advisory English 2024.pdf"
                   target="_blank"
                   className="btn-know"
                 >
@@ -135,20 +132,32 @@ function Knowledgebase() {
                 </Link>
               </Card.Body>
             </Card>
+          </Col>
+      {/* Rainy Flyer */}
+          <Col lg={4} sm={6}>
+            <CarouselForRainy />
+          </Col>
+      {/* Winter Flyer */}
+          <Col lg={4} sm={6}>
+            <CarouselForWinter />
+          </Col>
+      {/* Headt Advisory Carousel */}
+          <Col lg={4} sm={6}>
+           <CarouselForHeatAdvisory />
           </Col>
           <Col lg={4} sm={6}>
             <Card className=" border-0 text-center mt-4">
               <Card.Img
                 variant="top"
                 className="img-know"
-                src="/images/CAC-KnowledgeBaseBanner–2.png"
+                src="/images/winter-advisory.png"
               />
               <Card.Body>
                 <Card.Title className="fs-5 fw-light mb-4 main-color">
-                FINAL - Hindi - 20th AUG 2024 Rainy Season
+                Winter Advisory English 2024
                 </Card.Title>
                 <Link
-                  href="/FINAL - Hindi - Rainy Season_A4_ 20th AUG 2024_Hindi_v2 (1) (1).pdf"
+                  href="/Winter Advisory English 2024.pdf"
                   target="_blank"
                   className="btn-know"
                 >
@@ -157,29 +166,10 @@ function Knowledgebase() {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={4} sm={6}>
-            <Card className=" border-0 text-center mt-4">
-              <Card.Img
-                variant="top"
-                className="img-know"
-                src="/images/CAC-KnowledgeBaseBanner–2.png"
-              />
-              <Card.Body>
-                <Card.Title className="fs-5 fw-light mb-4 main-color">
-                FINAL - Assamese - 20th AUG 2024 Rainy Season
-                </Card.Title>
-                <Link
-                  href="/FINAL - Assamese - 20th AUG 2024 Rainy Season_.pdf"
-                  target="_blank"
-                  className="btn-know"
-                >
-                  Know More
-                </Link>
-              </Card.Body>
-            </Card>
-          </Col>
+
         </Row>
 
+        {/* media */}
         <Row>
           <Col>
             <h1 className="fs-1 pt-4 pb-4 fw-light" id="media">
@@ -345,7 +335,6 @@ function Knowledgebase() {
               </Card.Body>
             </Card>
           </Col>
-          
         </Row>
       </Container>
     </>

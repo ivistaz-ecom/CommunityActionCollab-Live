@@ -1,0 +1,26 @@
+/* Custom styles for carousel arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  background-size: 100%, 100%;
+}
+
+/* Adjust arrow position to be outside the carousel */
+.carousel-control-prev, .carousel-control-next {
+  width: 5%; /* Reduce width of the clickable area */
+}
+
+.carousel-control-prev {
+  left: -10px; /* Move the arrow outside on the left */
+}
+
+.carousel-control-next {
+  right: -10px; /* Move the arrow outside on the right */
+}
+
+/* Optional: Adjust the appearance of the buttons */
+.custom-arrow {
+  filter: invert(100%); /* Make the default arrow black */
+}
