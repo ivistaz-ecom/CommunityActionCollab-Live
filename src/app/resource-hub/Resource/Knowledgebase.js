@@ -16,12 +16,81 @@ function Knowledgebase() {
       <Container id="base">
         <Row>
           <Col>
-            <h1 className="fs-1 pt-4 pb-4 fw-light">Knowledge Base</h1>
+            <h1 className="fs-1 pt-4 pb-4 fw-bold">Knowledge Base</h1>
           </Col>
         </Row>
         <Row>
+          {/* Heat Carousel */}
           <Col lg={4} sm={6}>
-            <Card className="border-0 text-center">
+            <CarouselForHeat />
+          </Col>
+
+          <Col lg={4} sm={6}>
+            <Card className=" border-0 text-center mt-4">
+              <Card.Img
+                variant="top"
+                className="img-know"
+                src="/images/heat-advisory.png"
+              />
+              <Card.Body>
+                <Card.Title className="fs-5 fw-light mb-4 main-color">
+                  Heat Toon Advisory English 2024
+                </Card.Title>
+                <Link
+                  href="/Heat Toon Advisory English 2024.pdf"
+                  target="_blank"
+                  className="btn-know"
+                >
+                  Know More
+                </Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* Rainy Flyer */}
+          <Col lg={4} sm={6}>
+            <CarouselForRainy />
+          </Col>
+          {/* Winter Flyer */}
+          <Col lg={4} sm={6}>
+            <CarouselForWinter />
+          </Col>
+          {/* Monsoon */}
+          <Col lg={4} sm={6}>
+            <CarouselForMonsoon2023 />
+          </Col>
+          {/* Headt Advisory Carousel */}
+          <Col lg={4} sm={6}>
+            <CarouselForHeatAdvisory />
+          </Col>
+          <Col lg={4} sm={6}>
+            <Card className=" border-0 text-center mt-4">
+              <Card.Img
+                variant="top"
+                className="img-know"
+                src="/images/winter-advisory.png"
+              />
+              <Card.Body>
+                <Card.Title className="fs-5 fw-light mb-4 main-color">
+                  Winter Advisory English 2024
+                </Card.Title>
+                <Link
+                  href="/Winter Advisory English 2024.pdf"
+                  target="_blank"
+                  className="btn-know"
+                >
+                  Know More
+                </Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* Be Rain Ready Carousel */}
+          <Col lg={4} sm={6}>
+            <CarouselForRainReady />
+          </Col>
+
+          {/*  */}
+          <Col lg={4} sm={6}>
+            <Card className="border-0 text-center mt-4">
               <Card.Img
                 variant="top"
                 className="img-know"
@@ -41,8 +110,9 @@ function Knowledgebase() {
               </Card.Body>
             </Card>
           </Col>
+
           <Col lg={4} sm={6}>
-            <Card className="border-0 text-center">
+            <Card className="border-0 text-center mt-4">
               <Card.Img
                 variant="top"
                 className="img-know"
@@ -62,9 +132,7 @@ function Knowledgebase() {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={4} sm={6}>
-            <CarouselForMonsoon2023 />
-          </Col>
+
           <Col lg={4} sm={6}>
             <Card className="mx-5 border-0 text-center known-card mt-lg-4">
               <Card.Body>
@@ -103,76 +171,12 @@ function Knowledgebase() {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={4} sm={6}>
-            <CarouselForRainReady />
-          </Col>
-         
-
-          <Col lg={4} sm={6}>
-            <CarouselForHeat />
-          </Col>
-
-          <Col lg={4} sm={6}>
-            <Card className=" border-0 text-center mt-4">
-              <Card.Img
-                variant="top"
-                className="img-know"
-                src="/images/heat-advisory.png"
-              />
-              <Card.Body>
-                <Card.Title className="fs-5 fw-light mb-4 main-color">
-                  Heat Toon Advisory English 2024
-                </Card.Title>
-                <Link
-                  href="/Heat Toon Advisory English 2024.pdf"
-                  target="_blank"
-                  className="btn-know"
-                >
-                  Know More
-                </Link>
-              </Card.Body>
-            </Card>
-          </Col>
-      {/* Rainy Flyer */}
-          <Col lg={4} sm={6}>
-            <CarouselForRainy />
-          </Col>
-      {/* Winter Flyer */}
-          <Col lg={4} sm={6}>
-            <CarouselForWinter />
-          </Col>
-      {/* Headt Advisory Carousel */}
-          <Col lg={4} sm={6}>
-           <CarouselForHeatAdvisory />
-          </Col>
-          <Col lg={4} sm={6}>
-            <Card className=" border-0 text-center mt-4">
-              <Card.Img
-                variant="top"
-                className="img-know"
-                src="/images/winter-advisory.png"
-              />
-              <Card.Body>
-                <Card.Title className="fs-5 fw-light mb-4 main-color">
-                Winter Advisory English 2024
-                </Card.Title>
-                <Link
-                  href="/Winter Advisory English 2024.pdf"
-                  target="_blank"
-                  className="btn-know"
-                >
-                  Know More
-                </Link>
-              </Card.Body>
-            </Card>
-          </Col>
-
         </Row>
 
         {/* media */}
         <Row>
           <Col>
-            <h1 className="fs-1 pt-4 pb-4 fw-light" id="media">
+            <h1 className="fs-1 pt-4 pb-4 fw-bold mt-5" id="media">
               Media
             </h1>
           </Col>

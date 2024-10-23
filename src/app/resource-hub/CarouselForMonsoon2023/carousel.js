@@ -14,7 +14,7 @@ const MyCarousel = () => {
       >
         {monsoon2023.map((item, index) => (
           <Carousel.Item key={index}>
-            <Card className="border-0 text-center   ">
+            <Card className="border-0 text-center  mt-4">
               <Card.Img
                 variant="top"
                 className="img-know"
