@@ -66,8 +66,8 @@ function Knowledgebase() {
             <Card className=" border-0 text-center mt-4">
               <Card.Img
                 variant="top"
-                className="img-know"
-                src="/images/winter-advisory.png"
+                className="img-know border"
+                src="/images/winter-advisory-english.png"
               />
               <Card.Body>
                 <Card.Title className="fs-5 fw-light mb-4 main-color">

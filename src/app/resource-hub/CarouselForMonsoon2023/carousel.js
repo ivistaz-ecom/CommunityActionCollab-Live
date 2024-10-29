@@ -17,7 +17,7 @@ const MyCarousel = () => {
             <Card className="border-0 text-center  mt-4">
               <Card.Img
                 variant="top"
-                className="img-know"
+                className="img-know border"
                 src={item.thumbnail}
               />
               <Card.Body>
