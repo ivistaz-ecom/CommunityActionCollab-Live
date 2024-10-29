@@ -1,49 +1,49 @@
 export const heatflyer = [
     {
         id : 1,
-        thumbnail : "/images/heat-english.png",
+        thumbnail : "/images/heat-english.jpg",
         title : "Heat Flyer English 2024",
         pdflink : "/Heat Flyer English 2024 .pdf",
     },
     {
         id : 2,
-        thumbnail : "/images/heat-tamil.png",
+        thumbnail : "/images/heat-tamil.jpg",
         title : "Heat Flyer Tamil 2024",
         pdflink : "/Heat Flyer Tamil 2024.pdf",
     },
     {
         id : 3,
-        thumbnail : "/images/heat-marathi.png",
+        thumbnail : "/images/heat-marathi.jpg",
         title : "Heat Flyer Marathi 2024",
         pdflink : "Heat Flyer Marathi 2024.pdf",
     },
     {
         id : 4,
-        thumbnail : "/images/heat-odia.png",
+        thumbnail : "/images/heat-odiya.jpg",
         title : "Heat Flyer Odia 2024",
         pdflink : "Heat Flyer Odia 2024.pdf",
     },
     {
         id : 5,
-        thumbnail : "/images/heat-bengali.png",
+        thumbnail : "/images/heat-bengali.jpg",
         title : "Heat Flyer Bengali 2024",
         pdflink : "Heat Flyer Bengali 2024.pdf",
     },
     {
         id : 6,
-        thumbnail : "/images/heat-telugu.png",
+        thumbnail : "/images/heat-telugu.jpg",
         title : "Heat Flyer Telugu 2024",
         pdflink : "Heat Flyer Telugu 2024.pdf",
     },
     {
         id : 7,
-        thumbnail : "/images/heat-kannada.png",
+        thumbnail : "/images/heat-kannada.jpg",
         title : "Heat Flyer Kannada 2024",
         pdflink : "Heat Flyer Kannada 2024.pdf",
     },
     {
         id : 8,
-        thumbnail : "/images/heat-hindi.png",
+        thumbnail : "/images/heat-hindi.jpg",
         title : "Heat Flyer Hindi 2024",
         pdflink : "Heat Flyer Hindi 2024.pdf",
     },
@@ -52,13 +52,13 @@ export const heatflyer = [
 export const raniyflyer =[
     {
         id : 1,
-        thumbnail : "/images/rainy-english.png",
+        thumbnail : "/images/rainy-english.jpg",
         title : "Rainy Season Flyer English 2024",
         pdflink : "/Rainy Season Flyer English 2024 .pdf",
     },
     {
         id : 2,
-        thumbnail : "/images/rainy-tamil.png",
+        thumbnail : "/images/rainy-tamil.jpg",
         title : "Rainy Season Flyer Tamil 2024",
         pdflink : "/Rainy Season Flyer Tamil 2024.pdf",
     },
@@ -70,31 +70,31 @@ export const raniyflyer =[
     },
     {
         id : 4,
-        thumbnail : "/images/rainy-odia.png",
+        thumbnail : "/images/rainy-odia.jpg",
         title : "Rainy Season Flyer Odia 2024",
         pdflink : "Rainy Season Flyer Odia 2024.pdf",
     },
     {
         id : 5,
-        thumbnail : "/images/rainy-bengali.png",
+        thumbnail : "/images/rainy-bengali.jpg",
         title : "Rainy Season Flyer Bengali 2024",
         pdflink : "Rainy Season Flyer Bengali 2024 .pdf",
     },
     {
         id : 6,
-        thumbnail : "/images/rainy-telugu.png",
+        thumbnail : "/images/rainy-telugu.jpg",
         title : "Rainy Season Flyer Telugu 2024",
         pdflink : "Rainy Season Flyer Telugu 2024.pdf",
     },
     {
         id : 7,
-        thumbnail : "/images/rainy-kannada.png",
+        thumbnail : "/images/rainy-kannada.jpg",
         title : "Rainy Season Flyer Kannada 2024",
         pdflink : "Rainy Season Flyer Kannada 2024 .pdf",
     },
     {
         id : 8,
-        thumbnail : "/images/rainy-hindi.png",
+        thumbnail : "/images/rainy-hindi.jpg",
         title : "Rainy Season Flyer Hindi 2024",
         pdflink : "Rainy Season Flyer Hindi 2024.pdf",
     },
@@ -109,7 +109,7 @@ export const winterflyer =[
     },
     {
         id : 2,
-        thumbnail : "/images/winter-tamil.png",
+        thumbnail : "/images/winter-tamil.jpg",
         title : "Winter Flyer Tamil 2024",
         pdflink : "/Winter Flyer Tamil 2024.pdf",
     },
@@ -121,7 +121,7 @@ export const winterflyer =[
     },
     {
         id : 4,
-        thumbnail : "/images/winter-kannada.png",
+        thumbnail : "/images/winter-kannada.jpg",
         title : "Winter Flyer Kannada 2024",
         pdflink : "Winter Flyer Kannada 2024 .pdf",
     },
@@ -131,7 +131,7 @@ export const winterflyer =[
 export const monsoon2023 =[
     {
         id : 1,
-        thumbnail : "/images/advisory-1.png",
+        thumbnail : "/images/monsoon-english.png",
         title : "Monsoon Detailed Guide English 2023",
         pdflink : "/Monsoon Detailed Guide English 2023.pdf",
     },
@@ -161,7 +161,7 @@ export const monsoon2023 =[
     },
     {
         id : 6,
-        thumbnail : "/images/advisory-1.png",
+        thumbnail : "/images/monsoon-english.png",
         title : "Climate Advisory 2023 | Monsoon",
         pdflink : "Swasti-Monsoon-Pocket-Book-English-40-pages-Final-November-2023.pdf",
     },
