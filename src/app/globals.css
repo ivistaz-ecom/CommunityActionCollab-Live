@@ -2016,3 +2016,19 @@ li button {
     height: 150px !important;
 }
 }
+
+
+/*  */
+/* Custom Carousel Styles */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: white; /* Set background color to white */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; 
+  border-radius: 100%;
+}
+
+
