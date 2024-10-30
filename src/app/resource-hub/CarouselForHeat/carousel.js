@@ -15,6 +15,10 @@ const MyCarousel = ({ data }) => {
           </Card.Body>
         </Card>
       ) : (
+
+
+
+        
         // Render carousel if there are multiple items
         <Carousel indicators={false}>
           {data.map((item) => (
