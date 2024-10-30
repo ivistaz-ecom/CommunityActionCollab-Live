@@ -214,7 +214,7 @@ function Example({ data }) {
                 <Row>
                   <Col sm={12}>
                     <button type="submit" className="btn btn-form" disabled={isSubmitting}>
-                      Send Message
+                      Sumbit
                       {isSubmitting && (
                         <RotatingLines
                           strokeColor="white"

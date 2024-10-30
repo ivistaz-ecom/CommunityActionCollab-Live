@@ -197,6 +197,14 @@ export const slider = {
             pdflink: "/Heat Advisory Kannada 2024.pdf",
         },
     ],
+    static7: [
+        {
+            id: 1,
+            thumbnail: "/images/knowledge-base-banner.png",
+            title: "Make Small And Marginal Farmers Resilient 2024",
+            pdflink: "/How to make small and marginal farmers resilient.pdf",
+        },
+    ],
     static1: [
         {
             id: 1,
@@ -240,11 +248,12 @@ export const slider = {
     static6: [
         {
             id: 1,
-            thumbnail: "",
+            // thumbnail: "",
             title: "Research Paper | Drivers of vaccine hesitancy among vulnerable populations in India: a cross-sectional multi-state study",
             URLLink: "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1177634/full?utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field&journalName=Frontiers_in_Public_Health&id=1177634",
         },
     ],
+    
 
 
 };

@@ -9,7 +9,7 @@ const MyCarousel = ({ data }) => {
       {data.length === 1 ? (
         // Render a single card without carousel if there's only one item
         <Card className="border-0 text-center mt-4">
-          <Card.Img variant="top" className="img-know border" src={data[0].thumbnail} />
+          <Card.Img variant="top" className="img-know " src={data[0].thumbnail} />
           <Card.Body>
             <Card.Title className="fs-5 fw-light mb-4 main-color">{data[0].title}</Card.Title>
           </Card.Body>
@@ -18,7 +18,7 @@ const MyCarousel = ({ data }) => {
 
 
 
-        
+
         // Render carousel if there are multiple items
         <Carousel indicators={false}>
           {data.map((item) => (
