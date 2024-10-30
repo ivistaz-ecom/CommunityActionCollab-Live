@@ -1,39 +1,37 @@
-import { Carousel, Card } from "react-bootstrap";
+import { Carousel, Card } from 'react-bootstrap';
 import Link from 'next/link';
 import React from 'react';
-import './MyCarousel.css'; // Add this CSS file for custom styles
-import { heatflyer } from "../../../../utils/data"; // Assuming heatflyer is an array of objects
+import Modal from "../../../../utils/Modal";
 
-const MyCarousel = () => {
+const MyCarousel = ({ data }) => {
   return (
     <>
-      <Carousel 
-        indicators={false} 
-        nextIcon={<span aria-hidden="true" className="carousel-control-next-icon custom-arrow" />} 
-        prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon custom-arrow" />}
-      >
-        {heatflyer.map((item, index) => (
-          <Carousel.Item key={index}>
-            <Card className="border-0 text-center mt-4">
-              <Card.Img
-                variant="top"
-                className="img-know border"
-                src={item.thumbnail}
-              />
-              <Card.Body>
-                <Card.Title className="fs-5 fw-light mb-4 main-color">
-                  {item.title}
-                </Card.Title>
-                <Link href={item.pdflink} passHref  className="btn-know" target="_blank">
-                 Know More
-                </Link>
-              </Card.Body>
-            </Card>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      {data.length === 1 ? (
+        // Render a single card without carousel if there's only one item
+        <Card className="border-0 text-center mt-4">
+          <Card.Img variant="top" className="img-know border" src={data[0].thumbnail} />
+          <Card.Body>
+            <Card.Title className="fs-5 fw-light mb-4 main-color">{data[0].title}</Card.Title>
+          </Card.Body>
+        </Card>
+      ) : (
+        // Render carousel if there are multiple items
+        <Carousel indicators={false}>
+          {data.map((item) => (
+            <Carousel.Item key={item.id}>
+              <Card className="border-0 text-center mt-4">
+                <Card.Img variant="top" className="img-know border" src={item.thumbnail} />
+                <Card.Body>
+                  <Card.Title className="fs-5 fw-light mb-4 main-color">{item.title}</Card.Title>
+                </Card.Body>
+              </Card>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      )}
+      <Modal data={data} />
     </>
   );
-}
+};
 
 export default MyCarousel;
