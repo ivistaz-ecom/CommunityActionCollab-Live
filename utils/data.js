@@ -229,15 +229,8 @@ export const slider = {
             pdflink: "/Heatwave-Advisory-Note-Ganesh-A.pdf",
         },
     ],
+    
     static4: [
-        {
-            id: 1,
-            thumbnail: "images/climate.png",
-            title: "Climate Advisory 2023 | Heat wave",
-            pdflink: "/Heatwave-Advisory-Note-Ganesh-A.pdf",
-        },
-    ],
-    static5: [
         {
             id: 1,
             thumbnail: "/images/advisory.png",
@@ -245,7 +238,7 @@ export const slider = {
             pdflink: "/Winter-Guide-to-Wellbeing_2023.pdf",
         },
     ],
-    static6: [
+    static5: [
         {
             id: 1,
             // thumbnail: "",
