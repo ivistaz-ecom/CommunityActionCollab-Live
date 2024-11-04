@@ -2022,7 +2022,7 @@ li button {
 /* Custom Carousel Styles */
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: white; /* Set background color to white */
+  /* background-color: white;  */
 }
 
 .carousel-control-prev-icon,
