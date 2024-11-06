@@ -221,31 +221,31 @@ export const slider = {
             pdflink: "/Winter Advisory English 2024.pdf",
         },
     ],
-    static3: [
-        {
-            id: 1,
-            thumbnail: "images/climate.png",
-            title: "Climate Advisory 2023 | Heat wave",
-            pdflink: "/Heatwave-Advisory-Note-Ganesh-A.pdf",
-        },
-    ],
+    // static3: [
+    //     {
+    //         id: 1,
+    //         thumbnail: "images/climate.png",
+    //         title: "Climate Advisory 2023 | Heat wave",
+    //         pdflink: "/Heatwave-Advisory-Note-Ganesh-A.pdf",
+    //     },
+    // ],
     
-    static4: [
-        {
-            id: 1,
-            thumbnail: "/images/advisory.png",
-            title: "Climate Advisory 2023 | Cold wave",
-            pdflink: "/Winter-Guide-to-Wellbeing_2023.pdf",
-        },
-    ],
-    static5: [
-        {
-            id: 1,
-            // thumbnail: "",
-            title: "Research Paper | Drivers of vaccine hesitancy among vulnerable populations in India: a cross-sectional multi-state study",
-            URLLink: "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1177634/full?utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field&journalName=Frontiers_in_Public_Health&id=1177634",
-        },
-    ],
+    // static4: [
+    //     {
+    //         id: 1,
+    //         thumbnail: "/images/advisory.png",
+    //         title: "Climate Advisory 2023 | Cold wave",
+    //         pdflink: "/Winter-Guide-to-Wellbeing_2023.pdf",
+    //     },
+    // ],
+    // static5: [
+    //     {
+    //         id: 1,
+    //         // thumbnail: "",
+    //         title: "Research Paper | Drivers of vaccine hesitancy among vulnerable populations in India: a cross-sectional multi-state study",
+    //         URLLink: "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1177634/full?utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field&journalName=Frontiers_in_Public_Health&id=1177634",
+    //     },
+    // ],
     
 
 
