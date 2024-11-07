@@ -21,7 +21,7 @@ jobs:
           # passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH passphrase if applicable
 
           script: |
-            cd /home/react-staging/communityactioncollab
+            cd /home/react-staging/community-staging
             git config --global --add safe.directory /home/react-staging/community-staging
             sudo git pull origin main
             sudo npm install
