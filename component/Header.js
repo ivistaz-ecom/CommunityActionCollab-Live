@@ -60,7 +60,7 @@ function Header() {
               <Link className='me-4 nav-link fs-6' href="/contact-us">Contact Us                  </Link>
         </li>
         <li>
-          <SearchModal/>
+          {/* <SearchModal/> */}
         </li>
       </ul>
     </div>
