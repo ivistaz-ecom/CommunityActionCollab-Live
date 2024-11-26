@@ -2033,3 +2033,12 @@ li button {
 
 
 
+.hover-search {
+  color: black;
+  transition: color 0.2s; /* Optional smooth transition */
+}
+
+.hover-search:hover {
+  color: #1c7c9c !important;
+  /* font-size: 25px; */
+}

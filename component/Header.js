@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import SearchModal from './SearchBar/SearchBar'
 function Header() {
   return (
     <div>
@@ -58,6 +58,9 @@ function Header() {
               </li>
               <li className="nav-item">
               <Link className='me-4 nav-link fs-6' href="/contact-us">Contact Us                  </Link>
+        </li>
+        <li>
+          <SearchModal/>
         </li>
       </ul>
     </div>
@@ -117,8 +120,12 @@ function Header() {
               <li className="nav-item">
               <Link className='me-4 nav-link fs-6' href="/join-us">Join Us</Link>
               </li><hr/>
-              <li className="nav-item">
+              <li className="nav-item d-flex">
               <Link className='me-4 nav-link fs-6' href="/contact-us">Contact Us</Link>
+              <SearchModal/>
+        </li>
+        <li>
+          
         </li>
       </ul>
     </div>
