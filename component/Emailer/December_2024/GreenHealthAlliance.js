@@ -13,9 +13,11 @@ const GreenHealthAlliance = () => {
                     </div>
 
                     <div className='d-flex flex-row justify-content-center '>
-                        <h3 className='mb-0 bg-yellow py-3 px-5'>
-                            Green Health Alliance
-                        </h3>
+                        <div className='border-bottom-0 border-top-0' style={{ border: '10px solid #2B7B99' }}>
+                            <h3 className='mb-0 bg-dyellow py-3 px-5  border-bottom-0 border-top-0 fw-bold' style={{ border: '8px solid #C7F0E3' }}>
+                                Green Health Alliance
+                            </h3>
+                        </div>
                     </div>
 
                     <div className='text-center'>
@@ -23,7 +25,7 @@ const GreenHealthAlliance = () => {
                     </div>
 
                     <div className='text-center'>
-                        <Image src="/emailer/dec-2024/online_side_meeting.png" alt='' />
+                        <Image src="/emailer/dec-2024/online_meeting.png" alt='' className='w-100' />
                     </div>
 
                     <div>

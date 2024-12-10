@@ -4,8 +4,8 @@ import { Image } from 'react-bootstrap'
 const CacMember = forwardRef((props, ref) => {
     return (
         <>
-            <div className='container p-4' ref={ref}>
-                <div className='d-flex flex-column gap-3 flex-column justify-content-center'>
+            <div className='container p-lg-0 px-lg-0 px-4' ref={ref}>
+                <div className='d-flex flex-column flex-column justify-content-center'>
                     <div className='d-flex flex-row justify-content-center '>
                         <h3 className='mb-0 py-3 px-lg-5 fw-bolder'>
                             CAC MEMBER SPOTLIGHT - IN THEIR OWN WORDS
@@ -13,7 +13,7 @@ const CacMember = forwardRef((props, ref) => {
                     </div>
 
                     <div className='text-center'>
-                        <Image src="/emailer/dec-2024/cac_member_spotlight.png" alt='' />
+                        <Image src="/emailer/dec-2024/cac_member.png" alt='' className='w-100' />
                     </div>
 
                     <div>
@@ -30,19 +30,20 @@ const CacMember = forwardRef((props, ref) => {
                         <a href='https://www.livetolove.org/' className='text-dblue text-decoration-underline' target='_blank'>
                             Learn more
                         </a>
+                        <div className='d-flex flex-column justify-content-center align-items-center mt-3'>
+                            <a href='https://www.livetolove.org/donate' className='bg-sblue p-2 rounded-4 d-inline-block px-4 text-black'>
+                                You can support our initiatives by donating here
+                            </a>
+                        </div>
                     </div>
 
-                    <div className='d-flex flex-column justify-content-center align-items-center'>
-                        <a href='https://www.livetolove.org/donate' className='bg-sblue p-2 rounded-4 d-inline-block px-4 text-black'>
-                            You can support our initiatives by donating here
-                        </a>
-                    </div>
 
-                    <div className='border-1 mt-4' style={{ border: "1px dashed black" }}>
+
+                    <div className='border-1 my-5' style={{ border: "1px dashed black" }}>
                     </div>
 
                 </div>
-            </div >
+            </div>
         </>
     )
 });

@@ -20,10 +20,12 @@ const LearningEvents = forwardRef((props, ref) => {
             </style>
             <div className='container py-4 p-0' ref={ref}>
                 <div className='d-flex flex-column gap-3 flex-column justify-content-center'>
-                    <div className='d-flex flex-row justify-content-center '>
-                        <h3 className='mb-0 bg-yellow py-3 px-5'>
-                            Learning Events
-                        </h3>
+                    <div className='d-flex flex-row justify-content-center'>
+                        <div className='border-bottom-0 border-top-0' style={{ border: '10px solid #2B7B99' }}>
+                            <h3 className='mb-0 bg-dyellow py-3 px-5 border-bottom-0 border-top-0 border-white fw-bold' style={{ border: '8px solid' }}>
+                                Learning Events
+                            </h3>
+                        </div>
                     </div>
 
                     <div className='text-center'>

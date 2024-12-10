@@ -7,17 +7,17 @@ const SolutionScale = forwardRef((props, ref) => {
             <style>
                 {
                     `
-                .text-dblue {
-                    color: #2A7A99;
-                }
-                `
+                        .text-dblue {
+                            color: #2A7A99;
+                        }
+                    `
                 }
             </style>
-            <div className='container p-4' ref={ref}>
-                <div className='d-flex flex-column gap-3 flex-column justify-content-center'>
+            <div className='container p-lg-0 px-lg-0 px-4' ref={ref}>
+                <div className='d-flex flex-column flex-column justify-content-center'>
                     <div className='text-center'>
-                        <Image src="/emailer/dec-2024/solution_to_scale.png" alt='' className='w-100 z-0 position-relative' />
-                        <div className='bg-yellow text-center p-4 mx-3 z-3 position-relative' style={{ marginTop: "-65px" }}>
+                        <Image src="/emailer/dec-2024/sts.png" alt='' className='w-100 z-0 position-relative' />
+                        <div className='bg-yellow text-center p-4 mx-3 mx-lg-5 z-3 position-relative' style={{ marginTop: "-65px" }}>
                             <h3>
                                 SOLUTIONS TO SCALE
                             </h3>
@@ -27,7 +27,7 @@ const SolutionScale = forwardRef((props, ref) => {
                         </div>
                     </div>
 
-                    <div className='text-start '>
+                    <div className='text-start py-4'>
                         <p>
                             Our solution for the resilience of street vendors, especially women, prioritises their well-being and empowerment, covering improved health, safety, security, social protection, voice, and agency.
                         </p>
@@ -54,7 +54,7 @@ const SolutionScale = forwardRef((props, ref) => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className='py-4'>
                         <p>
                             The intervention has provided services to more than 30,000 street vendors in Maharashtra, Delhi, Odisha, Telangana, West Bengal, Haryana, and Andhra Pradesh.
                         </p>
@@ -69,7 +69,7 @@ const SolutionScale = forwardRef((props, ref) => {
                         </a>
                     </div>
 
-                    <div className='border-1' style={{ border: "1px dashed black" }}>
+                    <div className='border-1 my-4' style={{ border: "1px dashed black" }}>
                     </div>
                 </div>
             </div>
