@@ -19,7 +19,7 @@ const SocialProtectionProject = () => {
                     </div>
 
                     <div className='text-center'>
-                        <Image src="/emailer/dec-2024/social_protection_project.png" alt='' />
+                        <Image src="/emailer/dec-2024/social_protection.png" alt='' className='w-100' />
                     </div>
 
                     <div>

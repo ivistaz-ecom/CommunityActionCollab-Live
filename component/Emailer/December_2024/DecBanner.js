@@ -42,6 +42,10 @@ const DecBanner = () => {
                             background: #FDE579;
                         }
 
+                        .bg-dyellow {
+                            background: #FBD036;
+                        }
+
                         .bg-sblue {
                             background: #C7F0E4;
                         }
