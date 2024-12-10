@@ -10,10 +10,10 @@ const DecFooter = () => {
                         <a href='https://communityactioncollab.org/' target='_blank' className='cursor-pointer'>
                             <Image src='/emailer/dec-2024/footer-icon-link.svg' alt='' />
                         </a>
-                        <a href="https://www.linkedin.com/showcase/community-action-collab/" className='cursor-pointer'>
+                        <a href="https://x.com/i/flow/login?redirect_after_login=%2FCommActCollab" target='_blank' className='cursor-pointer'>
                             <Image src='/emailer/dec-2024/twitter.svg' alt='' />
                         </a>
-                        <a href='https://x.com/i/flow/login?redirect_after_login=%2FCommActCollab' className='cursor-pointer'>
+                        <a href='https://www.linkedin.com/showcase/community-action-collab/' target='_blank' className='cursor-pointer'>
                             <Image src='/emailer/dec-2024/linkedin.svg' alt='' />
                         </a>
                         {/* <Image src='/emailer/dec-2024/instagram.svg' alt='' /> */}
