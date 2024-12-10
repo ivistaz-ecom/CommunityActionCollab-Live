@@ -27,13 +27,13 @@ const CacMember = forwardRef((props, ref) => {
                     </div>
 
                     <div className='text-center '>
-                        <a href='livetolove.org' className='text-dblue text-decoration-underline' target='_blank'>
+                        <a href='https://www.livetolove.org/' className='text-dblue text-decoration-underline' target='_blank'>
                             Learn more
                         </a>
                     </div>
 
                     <div className='d-flex flex-column justify-content-center align-items-center'>
-                        <a href='livetolove.org/donate' className='bg-sblue p-2 rounded-4 d-inline-block px-4 text-black'>
+                        <a href='https://www.livetolove.org/donate' className='bg-sblue p-2 rounded-4 d-inline-block px-4 text-black'>
                             You can support our initiatives by donating here
                         </a>
                     </div>
