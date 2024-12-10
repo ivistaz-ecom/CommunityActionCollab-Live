@@ -3,6 +3,21 @@ import React, { forwardRef } from 'react'
 const LearningEvents = forwardRef((props, ref) => {
     return (
         <>
+            <style>
+                {
+                    `
+                    .dot-em2::before {
+                        content: '•';
+                        margin-right: 8px;
+                        color: #297B99;
+                        font-size: 40px !important;
+                    }
+                    .dot-em2 {
+                        margin-top: -18.5px;
+                    }
+                    `
+                }
+            </style>
             <div className='container py-4 p-0' ref={ref}>
                 <div className='d-flex flex-column gap-3 flex-column justify-content-center'>
                     <div className='d-flex flex-row justify-content-center '>
@@ -29,26 +44,32 @@ const LearningEvents = forwardRef((props, ref) => {
 
                     <div className='bg-yellow p-4 d-flex flex-column'>
                         <h4 className='text-bold'>Upcoming Events</h4>
-                        <div className='d-flex flex-column mt-3'>
-                            <p>Orientation session on the RSVC Model for Implementation Partners brought by CAC in partnership with the Office of the Principal Scientific Adviser to the Government of India (PSA)</p>
-                            <p>Conducted in English on 12 December 2024</p>
-                            <p>Conducted in Hindi on 13 December 2024</p>
-                            <a href='https://lnkd.in/g6W8kJ7W' target='_blank' className='text-dblue'>
-                                <p>
-                                    Registration
-                                </p>
-                            </a>
+                        <div className='d-flex flex-row mt-3'>
+                            <div className='dot-em2'></div>
+                            <div>
+                                <p>Orientation session on the RSVC Model for Implementation Partners brought by CAC in partnership with the Office of the Principal Scientific Adviser to the Government of India (PSA)</p>
+                                <p>Conducted in English on 12 December 2024</p>
+                                <p>Conducted in Hindi on 13 December 2024</p>
+                                <a href='https://lnkd.in/g6W8kJ7W' target='_blank' className='text-dblue text-decoration-underline'>
+                                    <p>
+                                        Registration
+                                    </p>
+                                </a>
+                            </div>
                         </div>
 
-                        <div className='mt-3'>
-                            <p>Theory of Change and Logic Models.</p>
-                            <p>Discover how to create a meaningful and lasting impact in your community with our session on Theory of Change and Logic Models.</p>
-                            <p>11 Dec 2024</p>
-                            <a href='https://shorturl.at/nkvPF' target='_blank' className='text-dblue'>
-                                <p>
-                                    Registration
-                                </p>
-                            </a>
+                        <div className='d-flex flex-row mt-3'>
+                            <div className='dot-em2'></div>
+                            <div>
+                                <p>Theory of Change and Logic Models.</p>
+                                <p>Discover how to create a meaningful and lasting impact in your community with our session on Theory of Change and Logic Models.</p>
+                                <p>11 Dec 2024</p>
+                                <a href='https://shorturl.at/nkvPF' target='_blank' className='text-dblue text-decoration-underline'>
+                                    <p>
+                                        Registration
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

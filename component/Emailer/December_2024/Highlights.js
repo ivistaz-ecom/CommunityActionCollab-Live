@@ -20,7 +20,7 @@ const Highlights = forwardRef((props, ref) => {
                     </div>
 
                     <div className='text-center'>
-                        <Image src='/emailer/dec-2024/emergency_response.png' alt='' />
+                        <Image src='/emailer/dec-2024/emergency_response.png' alt='' className='w-100' />
                     </div>
                     <div>
                         <p>

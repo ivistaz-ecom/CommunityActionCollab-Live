@@ -8,18 +8,18 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
                 <div className='d-flex flex-column gap-3 flex-column justify-content-center'>
 
                     <div className='d-flex flex-row justify-content-center '>
-                        <h3 className='mb-0 bg-yellow py-3 px-5 fw-bolder'>
+                        <h3 className='mb-0 bg-yellow py-3 px-lg-5 px-3 fw-bolder'>
                             CAC’s DIGITAL CAMPAIGNS:
                         </h3>
                     </div>
 
                     <div className='d-flex flex-column justify-content-center align-items-center'>
-                        <h3 className='text-dblue p-2 rounded-4 d-inline-block px-4'>
+                        <h3 className='text-dblue rounded-4 d-inline-block'>
                             Raising Awareness, Inspiring Action
                         </h3>
                     </div>
 
-                    <div className='text-center'>
+                    <div className='text-lg-center text-start'>
                         <p>
                             Community Action Collab leverages digital campaigns to amplify its mission of building resilience among vulnerable communities. Through impactful storytelling, collaborative content creation, and engaging visuals, CAC highlights critical issues like climate change, health, and social protection. These campaigns empower partners to showcase interventions, voice concerns, and attract investment while raising awareness about everyday emergencies.
                         </p>

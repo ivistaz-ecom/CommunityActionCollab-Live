@@ -4,7 +4,7 @@ import { Image } from 'react-bootstrap'
 const DecFooter = () => {
     return (
         <>
-            <div className='container bg-gray mt-5 p-0'>
+            <div className='container bg-gray mt-5'>
                 <div className='d-flex flex-column gap-3 flex-column justify-content-center align-items-center'>
                     <div className='d-flex flex-col justify-content-center gap-3' style={{ marginTop: '-15px' }}>
                         <a href='https://communityactioncollab.org/' target='_blank' className='cursor-pointer'>
