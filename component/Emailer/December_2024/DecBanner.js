@@ -167,27 +167,23 @@ const DecBanner = () => {
                     <div>
                         <h4 className='fw-bold'>Dear CAC member,</h4>
                         <p>
-                            At Community Action Collab, we believe that collaboration is central to driving systemic change. Through the power of coalitions, we can achieve shared goals, improve the well-being of vulnerable populations, and enhance their ability to withstand, recover, and bounce forward from crises. By hosting coalitions focused on health, livelihood, social protection, and climate adaptation, CAC brings together diverse partners to tackle complex challenges and create lasting impact. In the upcoming days, you will hear more from us about the coalitions hosted under CAC.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 className='fw-bold'>Why Coalitions Matter</h4>
-                        <p>
-                            By uniting stakeholders—including governments, NGOs, private sector entities, academia, and community groups—coalitions amplify their collective strengths and identify scalable solutions that address systemic issues at their root. For example, SETU —the Social Protection Coalition under CAC unites diverse stakeholders to strengthen social protection coverage for vulnerable populations, discovering and promoting scalable, sustainable interventions to ensure no one is left behind.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 className='fw-bold'>Power of Collaboration</h4>
-                        <p>
-                            Coalition building comes with hurdles such as navigating complex networks, managing competition, and addressing power imbalances. CAC supports coalitions hosted under it by promoting transparent communication, inclusive decision-making, and a commitment to shared responsibilities.
+                            At Community Action Collab, we orchestrate collaboration to bring about systemic change. Through the power of coalitions, we can achieve shared goals, improve the well-being of vulnerable populations, and enhance their ability to withstand, recover, and bounce forward from crises. By hosting coalitions focused on health, livelihood, social protection, and climate adaptation, CAC brings together diverse partners to tackle complex challenges and create lasting impact. In the upcoming days, you will hear more from us about the coalitions hosted under CAC.
                         </p>
 
                         <p>
-                            At CAC, we are inspired by the collective impact coalitions can achieve. Coalitions are more than tools for change—they are a shared responsibility and a source of inspiration. Together, we can amplify our efforts, influence policy, and build the resilience of vulnerable populations for a more equitable and sustainable future.
+                            By uniting stakeholders—including governments, NGOs, private sector entities, academia, and community groups—coalitions amplify their collective strengths and identify scalable solutions that address systemic issues at their root. For example, <a href='https://social-protection.communityactioncollab.org/' target='_blank' className='text-black text-decoration-underline' >SETU —the Social Protection Coalition</a> under CAC unites diverse stakeholders to strengthen social protection coverage for vulnerable populations, discovering and promoting scalable, sustainable interventions to ensure no one is left behind.
+                        </p>
+
+                        <p>
+                            We recognise that building and sustaining effective coalitions requires ongoing commitment and a willingness to navigate complexities. Open communication, inclusive decision-making, and a shared sense of responsibility is important. CAC supports its coalitions by promoting transparency, ensuring all voices are heard, and fostering a collaborative environment where every partner feels empowered to contribute.
+                        </p>
+
+                        <p>
+                            Ultimately, coalitions are more than just strategic alliances; they are powerful expressions of our shared humanity. They embody our collective responsibility to create a more just, equitable, and sustainable world. By working together, amplifying our efforts, and influencing policy, we can build the resilience of vulnerable populations and pave the way for a brighter future for all.
                         </p>
                     </div>
                 </div>
-            </div>
+            </div >
 
             <Highlights ref={highlightsRef} />
             <GreenHealthAlliance />

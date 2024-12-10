@@ -38,7 +38,7 @@ const CacMember = forwardRef((props, ref) => {
                         </a>
                     </div>
 
-                    <div className='border-1' style={{ border: "1px dashed black" }}>
+                    <div className='border-1 mt-4' style={{ border: "1px dashed black" }}>
                     </div>
 
                 </div>
