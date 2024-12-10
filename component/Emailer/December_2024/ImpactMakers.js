@@ -8,12 +8,12 @@ const ImpactMakers = () => {
                 <div className='d-flex flex-column gap-3 flex-column justify-content-center bg-sblue p-lg-5 p-4'>
                     <div className='d-flex flex-row justify-content-center '>
                         <h3 className='mb-0 fw-bolder'>
-                            UNFCCC Impact Makers: Recognizing the Impact of PATCH in Addressing Climate and Health Challenges
+                            UNFCCC Impact Makers: Recognising the Impact of PATCH in Addressing Climate and Health Challenges
                         </h3>
                     </div>
 
                     <div className='d-flex flex-lg-row gap-lg-5 flex-column'>
-                        <div className='d-flex flex-column justify-content-center align-items-center'>
+                        <div className='d-flex flex-column'>
                             <p>
                                 <span className='fw-bold'>Dr. Angela Chaudhuri</span>, Chief Catalyst at Swasti, has been recognized by the United Nations Framework Convention on Climate Change (UNFCCC) as part of their COP29 Impact Makers Campaign.
                             </p>
@@ -28,6 +28,11 @@ const ImpactMakers = () => {
                         <div>
                             <Image src='/emailer/dec-2024/impact_makers.png' alt='' />
                         </div>
+                    </div>
+                    <div className='d-flex flex-column justify-content-center align-items-center mt-3'>
+                        <a href='https://climatechampions.unfccc.int/impact-makers-angela-chaudhuri/' target='_blank' className='bg-yellow p-2 rounded-4 d-inline-block px-4 text-black'>
+                            Read the full feature here
+                        </a>
                     </div>
                 </div>
             </div>
