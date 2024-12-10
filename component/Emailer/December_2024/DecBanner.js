@@ -37,7 +37,7 @@ const DecBanner = () => {
                                 margin-right: 8px; /* Adjust spacing */
                                 color: #297B99; /* Dot color */
                                 font-size: 1.2rem; /* Adjust size if needed */
-                            }
+                        }
                         .bg-yellow {
                             background: #FDE579;
                         }
@@ -79,6 +79,7 @@ const DecBanner = () => {
                         .cursor-pointer {
                             cursor: pointer;
                         }
+
 
                         @media(max-width:767px) {
                             img {
