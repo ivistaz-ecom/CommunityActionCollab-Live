@@ -65,7 +65,7 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
                         <div className='d-flex flex-column gap-lg-5 gap-4'>
                             <div className="row row-cols-1 row-cols-lg-3 g-3 g-lg-5">
                                 <div>
-                                    <Image src="/emailer/dec-2024/risk_1.png" alt="" />
+                                    <Image src="/emailer/dec-2024/risk_1.png" alt="" className="img-fluid" />
                                 </div>
                                 <div>
                                     <Image src="/emailer/dec-2024/risk_2.png" alt="" className="img-fluid" />
