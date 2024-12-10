@@ -62,7 +62,7 @@ const SolutionScale = forwardRef((props, ref) => {
                     </div>
 
                     <div className='d-flex flex-column justify-content-center align-items-center mb-3'>
-                        <a href='https://docs.google.com/document/u/0/d/1CmP-FfzEWbEtPdAwStArSyl_nzcOj2byaaKpbmzWuAg/edit' target='_blank'>
+                        <a href='https://communityactioncollab.org/invest-for-impact-2024' target='_blank'>
                             <p className='bg-sblue p-2 rounded-4 d-inline-block px-4 text-black'>
                                 More opportunities to invest
                             </p>
