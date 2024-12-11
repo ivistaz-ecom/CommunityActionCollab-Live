@@ -29,7 +29,7 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
 
                     <div className=''>
                         <h3>
-                            <span className='fw-bold'>POSHAN MAH</span> (September 1–30)
+                            <span className='fw-bold'>POSHAN MAAH</span> (September 1–30)
                         </h3>
                         <div className='d-flex flex-column gap-lg-5 gap-4'>
                             <div className="row row-cols-1 row-cols-lg-3 g-3 g-lg-5">
