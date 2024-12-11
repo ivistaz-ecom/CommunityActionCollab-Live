@@ -182,7 +182,7 @@ const DecBanner = () => {
                         </p>
 
                         <p>
-                            We recognise that building and sustaining effective coalitions requires ongoing commitment and a willingness to navigate complexities. Open communication, inclusive decision-making, and a shared sense of responsibility is important. CAC supports its coalitions by promoting transparency, ensuring all voices are heard, and fostering a collaborative environment where every partner feels empowered to contribute.
+                            We recognise that building and sustaining effective coalitions requires ongoing commitment and a willingness to navigate complexities. Open communication, inclusive decision-making, and a shared sense of responsibility are important. CAC supports its coalitions by promoting transparency, ensuring all voices are heard, and fostering a collaborative environment where every partner feels empowered to contribute.
                         </p>
 
                         <p>

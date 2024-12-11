@@ -15,7 +15,7 @@ const ImpactMakers = () => {
                     <div className='d-flex flex-lg-row gap-lg-5 flex-column-reverse'>
                         <div className='d-flex flex-column justify-content-between pt-lg-0 pt-3'>
                             <p>
-                                <span className='fw-bold'>Dr. Angela Chaudhuri</span>, Chief Catalyst at Swasti, has been recognized by the United Nations Framework Convention on Climate Change (UNFCCC) as part of their COP29 Impact Makers Campaign.
+                                <span className='fw-bold'>Dr. Angela Chaudhuri</span>, Chief Catalyst at Swasti, has been recognised by the United Nations Framework Convention on Climate Change (UNFCCC) as part of their COP29 Impact Makers Campaign.
                             </p>
                             <p>
                                 This recognition reflects the work being done by Swasti’s Precision Action Towards Climate and Health (PATCH) platform, which connects health and climate through real-time data to address the needs of vulnerable populations.
