@@ -60,7 +60,7 @@ const LearningEvents = forwardRef((props, ref) => {
                             </div>
                         </div>
 
-                        <div className='d-flex flex-row mt-3'>
+                        {/* <div className='d-flex flex-row mt-3'>
                             <div className='dot-em2'></div>
                             <div>
                                 <p>Theory of Change and Logic Models.</p>
@@ -72,7 +72,7 @@ const LearningEvents = forwardRef((props, ref) => {
                                     </p>
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

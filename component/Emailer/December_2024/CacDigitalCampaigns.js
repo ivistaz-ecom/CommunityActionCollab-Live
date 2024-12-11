@@ -10,14 +10,14 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
                     <div className='d-flex flex-row justify-content-center '>
                         <div className='border-bottom-0 border-top-0' style={{ border: '10px solid #2B7B99' }}>
                             <h3 className='mb-0 bg-dyellow py-3 px-5  border-bottom-0 border-top-0 fw-bold' style={{ border: '8px solid #C7F0E3' }}>
-                                CAC’s Digital CampaIigns:
+                            Raising Awareness, Inspiring Action
                             </h3>
                         </div>
                     </div>
 
                     <div className='d-flex flex-column justify-content-center align-items-center'>
                         <h3 className='text-dblue rounded-4 d-inline-block'>
-                            Raising Awareness, Inspiring Action
+                            
                         </h3>
                     </div>
 
@@ -34,13 +34,13 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
                         <div className='d-flex flex-column gap-lg-5 gap-4'>
                             <div className="row row-cols-1 row-cols-lg-3 g-3 g-lg-5">
                                 <div className="col">
-                                    <Image src="/emailer/dec-2024/poshan_mah_1.png" alt="" className="img-fluid" />
+                                    <a href='https://www.linkedin.com/feed/update/urn:li:activity:7236706234752491520/' target='_blank'><Image src="/emailer/dec-2024/poshan_mah_1.png" alt="" className="img-fluid" /></a>
                                 </div>
                                 <div className="col">
-                                    <Image src="/emailer/dec-2024/poshan_mah_2.png" alt="" className="img-fluid" />
+                                    <a href='https://www.linkedin.com/feed/update/urn:li:activity:7239962319072436224/' target='_blank'><Image src="/emailer/dec-2024/poshan_mah_2.png" alt="" className="img-fluid" /></a>
                                 </div>
                                 <div className="col">
-                                    <Image src="/emailer/dec-2024/poshan_mah_3.png" alt="" className="img-fluid" />
+                                    <a href='https://www.linkedin.com/feed/update/urn:li:activity:7239246348791783424/' target='_blank'><Image src="/emailer/dec-2024/poshan_mah_3.png" alt="" className="img-fluid" /></a>
                                 </div>
                             </div>
 
@@ -65,19 +65,19 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
                         <div className='d-flex flex-column gap-lg-5 gap-4'>
                             <div className="row row-cols-1 row-cols-lg-3 g-3 g-lg-5">
                                 <div>
-                                    <Image src="/emailer/dec-2024/risk_1.png" alt="" className="img-fluid" />
+                                    <a target='_blank' href='https://www.linkedin.com/feed/update/urn:li:activity:7252997239499862016/'><Image src="/emailer/dec-2024/risk_1.png" alt="" className="img-fluid" /></a>
                                 </div>
                                 <div>
-                                    <Image src="/emailer/dec-2024/risk_2.png" alt="" className="img-fluid" />
+                                    <a href='https://www.linkedin.com/feed/update/urn:li:activity:7254084516703543296/' target='_blank'><Image src="/emailer/dec-2024/risk_2.png" alt="" className="img-fluid" /></a>
                                 </div>
                                 <div>
-                                    <Image src="/emailer/dec-2024/risk_3.png" alt="" className="img-fluid" />
+                                    <a href='https://www.linkedin.com/feed/update/urn:li:activity:7251539336716828672/' target='_blank'><Image src="/emailer/dec-2024/risk_3.png" alt="" className="img-fluid" /></a>
                                 </div>
                             </div>
                             <div className='d-flex flex-lg-row flex-column-reverse gap-lg-5 gap-2'>
                                 <div className='d-flex flex-column justify-content-center'>
                                     <p>
-                                        To mark the International Day for Disaster Risk Reduction, CAC launched a campaign to amplify awareness and foster engagement on disaster preparedness. CAC created a social media toolkit for members, shared key messages on its channels, and hosted a LinkedIn Live with Governing Council member Hari Krishna N to discuss empowering communities and youth for a disaster-resilient future.
+                                        To mark the International Day for Disaster Risk Reduction, CAC launched a campaign to amplify awareness and foster engagement on disaster preparedness. CAC created a social media toolkit for members, shared key messages on its channels, and hosted a <a href='https://www.linkedin.com/video/live/urn:li:ugcPost:7252272313566441473/' target='_blank'>LinkedIn Live</a> with Governing Council member Hari Krishna N to discuss empowering communities and youth for a disaster-resilient future.
                                     </p>
                                     <p>
                                         Key messages emphasised child-centred DRR strategies, youth empowerment, the value of disaster preparedness, and the importance of creating safer schools. A LinkedIn blog further expanded on campaign themes. The campaign aimed to inspire collective action and raise awareness about the need to empower youth and communities with the tools and resources to mitigate disaster risks effectively.
@@ -95,13 +95,13 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
                         <div className='d-flex flex-column gap-lg-5 gap-4'>
                             <div className="row row-cols-1 row-cols-lg-3 g-3 g-lg-5">
                                 <div>
-                                    <Image src="/emailer/dec-2024/shiv_kumar.png" alt="" className="img-fluid" />
+                                    <a href='https://www.linkedin.com/feed/update/urn:li:activity:7262781732028899328' target='_blank'><Image src="/emailer/dec-2024/shiv_kumar.png" alt="" className="img-fluid" /></a>
                                 </div>
                                 <div>
-                                    <Image src="/emailer/dec-2024/climate-1.png" alt="" className="img-fluid" />
+                                   <a href='https://www.linkedin.com/feed/update/urn:li:activity:7261670504300716032\' target='_blank'><Image src="/emailer/dec-2024/climate-1.png" alt="" className="img-fluid" /></a>
                                 </div>
                                 <div>
-                                    <Image src="/emailer/dec-2024/climate-2.png" alt="" className="img-fluid" />
+                                    <a href='https://www.linkedin.com/feed/update/urn:li:activity:7259159238227165185' target='_blank'><Image src="/emailer/dec-2024/climate-2.png" alt="" className="img-fluid" /></a>
                                 </div>
                             </div>
                             <div className='d-flex flex-lg-row flex-column-reverse gap-lg-5 gap-2'>
@@ -117,7 +117,7 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
                         </div>
                     </div>
                     <div>
-                        <h3> Wrap Up Newsletter</h3>
+                        <a href='https://drive.google.com/file/d/1dnk37dTqPN8fwc0mE4T9KQqRddljS_Wu/view' target='_blank'><h3> Wrap Up Newsletter</h3></a>
                         <p>
                             CAC crafted a newsletter summarizing its COP29 digital campaign that emphasized climate change's effects on vulnerable groups. By highlighting member-contributed stories of resilience and collaboration, the campaign effectively showcased impactful climate actions and stressed the urgent need to safeguard these communities' health and livelihoods.
                         </p>
