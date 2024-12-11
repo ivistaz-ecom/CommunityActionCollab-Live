@@ -47,10 +47,10 @@ const SolutionScale = forwardRef((props, ref) => {
                             This Solution Focuses On:
                         </h4>
                         <div className='mt-3'>
-                            <p className='dot-em'>Capacity building and awareness on rights and entitlements.</p>
-                            <p className='dot-em'>Improving access to social protection, primary health, and financial services.</p>
-                            <p className='dot-em'>Utilising on-site locations as learning sites for demonstrating comprehensive interventions.</p>
-                            <p className='dot-em'>Enhancing the voice and agency of the community.</p>
+                            <p className='dot-em'>Capacity building and awareness on rights and entitlements</p>
+                            <p className='dot-em'>Improving access to social protection, primary health, and financial services</p>
+                            <p className='dot-em'>Utilising on-site locations as learning sites for demonstrating comprehensive interventions</p>
+                            <p className='dot-em'>Enhancing the voice and agency of the community</p>
                         </div>
                     </div>
 

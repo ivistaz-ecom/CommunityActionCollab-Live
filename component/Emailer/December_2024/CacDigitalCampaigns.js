@@ -21,7 +21,7 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
                         </h3>
                     </div>
 
-                    <div className='text-lg-center text-start'>
+                    <div className='text-lg-left text-start'>
                         <p>
                             Community Action Collab leverages digital campaigns to amplify its mission of building resilience among vulnerable communities. Through impactful storytelling, collaborative content creation, and engaging visuals, CAC highlights critical issues like climate change, health, and social protection. These campaigns empower partners to showcase interventions, voice concerns, and attract investment while raising awareness about everyday emergencies.
                         </p>
@@ -119,7 +119,7 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
                     <div>
                         <a href='https://drive.google.com/file/d/1dnk37dTqPN8fwc0mE4T9KQqRddljS_Wu/view' target='_blank'><h3> Wrap Up Newsletter</h3></a>
                         <p>
-                            CAC crafted a newsletter summarizing its COP29 digital campaign that emphasized climate change's effects on vulnerable groups. By highlighting member-contributed stories of resilience and collaboration, the campaign effectively showcased impactful climate actions and stressed the urgent need to safeguard these communities' health and livelihoods.
+                            CAC crafted a newsletter summarising its COP29 digital campaign that emphasised climate change's effects on vulnerable groups. By highlighting member-contributed stories of resilience and collaboration, the campaign effectively showcased impactful climate actions and stressed the urgent need to safeguard these communities' health and livelihoods.
                         </p>
                     </div>
                 </div>
