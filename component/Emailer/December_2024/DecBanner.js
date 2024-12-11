@@ -109,6 +109,10 @@ const DecBanner = () => {
                 <h1 className='text-dblue'>#CommunityActionCollab Newsletter | December, 2024</h1>
             </div>
 
+            <div className='container bg-yellow p-0'>
+                <Image src='/emailer/dec-2024/inside_title.svg' alt='banner' className='' />
+            </div>
+
             {/* section 2 */}
             <div className='container bg-yellow p-5'>
                 <div className='d-flex flex-lg-row flex-column gap-lg-4 gap-3 flex-wrap'>
@@ -164,9 +168,7 @@ const DecBanner = () => {
                 </div>
             </div>
 
-            <div className='container bg-sblue p-0'>
-                <Image src='/emailer/dec-2024/inside_title.svg' alt='banner' className='' />
-            </div>
+
             <div className='container bg-sblue p-lg-5 p-4'>
                 <div className='d-flex flex-column gap-4'>
                     <div>
