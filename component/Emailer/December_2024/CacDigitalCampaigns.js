@@ -116,6 +116,12 @@ const CacDigitalCampaigns = forwardRef((props, ref) => {
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <h3> Wrap Up Newsletter</h3>
+                        <p>
+                            CAC crafted a newsletter summarizing its COP29 digital campaign that emphasized climate change's effects on vulnerable groups. By highlighting member-contributed stories of resilience and collaboration, the campaign effectively showcased impactful climate actions and stressed the urgent need to safeguard these communities' health and livelihoods.
+                        </p>
+                    </div>
                 </div>
             </div>
         </>
