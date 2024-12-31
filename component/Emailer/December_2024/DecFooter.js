@@ -2,6 +2,8 @@ import React from 'react'
 import { Image } from 'react-bootstrap'
 
 const DecFooter = () => {
+    const d = new Date();
+    let year = d.getFullYear();
     return (
         <>
             <div className='container bg-gray mt-5 p-0'>
@@ -40,7 +42,7 @@ const DecFooter = () => {
                     </div>
 
                     <div style={{ background: "#E0E0E0" }} className='w-100 p-4 text-center'>
-                        <p className='fst-italic mb-0' > Copyright © 2024 Catalyst Group. All rights reserved.</p>
+                        <p className='fst-italic mb-0' > Copyright © {year} Catalyst Group. All rights reserved.</p>
                     </div>
                 </div>
             </div>
