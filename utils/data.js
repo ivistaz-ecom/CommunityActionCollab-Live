@@ -257,12 +257,12 @@ export const media = [
           {
             "title": "An initiative to build economic resilience among Odisha’s linguistic minority fishing community",
             "imageSrc": "images/media.png",
-            "link": "/Heatwave-Advisory-Note-Ganesh-A.pdf"
+            "link": "https://www.thehindu.com/society/an-initiative-to-build-economic-resilience-among-odishas-liguistic-minority-fishing-community/article67100745.ece"
           },
           {
             "title": "Mr Shiv Kumar of the Community Action Collaborative talks about the Evolving Social Space",
             "imageSrc": "/images/media1.png",
-            "link": "/Winter-Guide-to-Wellbeing_2023.pdf"
+            "link": "https://thecsrjournal.in/mr-shiv-kumar-catalyst-group-community-action-collaborative-evolving-social-space-csr-news/"
           },
           {
             "title": "How collaborative platforms for non-profit, public & private sectors can lead India through a future humanitarian crisis",
