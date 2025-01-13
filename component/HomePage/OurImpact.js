@@ -8,7 +8,7 @@ import CountUp from "react-countup"
 function OurImpact() {
   return (
     <>
-          <Container className='mt-3'>
+          <Container className='mt-3 p-3 p-lg-2'>
        <h1 className='t-action fs-1 fw-light'>Our Impact</h1>
         <p className='p-action fs-5 fw-light'> Since March 2020, #COVIDActionCollab, powered by its diverse and determined partners across India, has been working tirelessly to reach the last mile. #COVIDActionCollab is now Community Action Collab and our impact continues on…</p>
       </Container>

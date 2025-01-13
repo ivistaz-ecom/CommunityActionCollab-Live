@@ -1408,9 +1408,9 @@ label.label-style {
     background-image: linear-gradient(90deg, #FFC400 0%, #1C7C9C 100%)!important;
 }
 .b-banner {
-  margin-top: 9px;
-  position: absolute;
-  left: 143px;
+  /* margin-top: 9px; */
+  /* position: absolute; */
+  /* left: 143px; */
 }
 .content {
   position: absolute;

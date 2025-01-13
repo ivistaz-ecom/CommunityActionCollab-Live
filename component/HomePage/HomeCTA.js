@@ -17,7 +17,7 @@ function HomeCTA() {
             </Col>
             <Col className='d-flex justify-content-center align-items-center order-0 order-lg-1' lg={4} sm={12} md={12} xs={12}>
               <Row className='d-flex flex-column'><Col>
-            <p className='fs-5 text-white fw-light'>
+            <p className='fs-5 text-white fw-light mt-lg-0 mt-5'>
             Taking the legacy of #COVIDActionCollab forward, Community Action Collab orchestrates and influences the actions and decisions of its partners, the Government and other alliances, enabling them to solve issues affecting 10 million vulnerable people and ensuring they access critical livelihood, health, social protection and climate impact solutions.
               </p></Col><Col className='text-center mt-4'>
                 <Link href="/about-us" className='b-btn p-3 rounded-3 text-decoration-none text-black'>FIND OUT MORE</Link>

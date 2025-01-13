@@ -29,11 +29,20 @@ function Header() {
         </li>
         <li className="nav-item dropdown mx-1">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Coalitions
+          </a>
+                <ul className="dropdown-menu">
+                  <li><Link className='dropdown-item fs-6' href="https://www.cphcalliance.org/" target='_blank'>CPHC</Link></li>
+                  <li><hr class="dropdown-divider"/></li>
+                  <li><Link target='_blank' className='dropdown-item fs-6' href="http://social-protection.communityactioncollab.org/">Social Protection</Link></li>
+          </ul>
+              </li>
+        <li className="nav-item dropdown mx-1">
+          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Our Initiatives
           </a>
                 <ul className="dropdown-menu">
-                  <li><Link target='_blank' className='dropdown-item fs-6' href="http://social-protection.communityactioncollab.org/">Social Protection</Link></li>
-                  <li><hr class="dropdown-divider"/></li>
+                  
                   <li><Link className='dropdown-item fs-6' href="/shilp">SHILP</Link></li>
                   <li><hr class="dropdown-divider"/></li>
                   <li><Link className='dropdown-item fs-6' href="/economic-resilience">Economic resilience</Link></li>
@@ -57,7 +66,7 @@ function Header() {
               <Link className='me-4 nav-link fs-6' href="/join-us">Join Us</Link>
               </li>
               <li className="nav-item">
-              <Link className='me-4 nav-link fs-6' href="/contact-us">Contact Us                  </Link>
+              <Link className='me-4 nav-link fs-6' href="/contact-us">Contact Us</Link>
         </li>
         <li>
           {/* <SearchModal/> */}
@@ -91,6 +100,17 @@ function Header() {
               <Link href="/impact" className="me-4 nav-link fs-6">Our Impact</Link>
                   </li>
                   <hr/>
+                  <li className="nav-item dropdown mx-1">
+          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Coalitions
+          </a>
+                <ul className="dropdown-menu">
+                  <li><Link className='dropdown-item fs-6' href="https://www.cphcalliance.org/" target='_blank'>CPHC</Link></li>
+                  <li><hr class="dropdown-divider"/></li>
+                  <li><Link target='_blank' className='dropdown-item fs-6' href="http://social-protection.communityactioncollab.org/">Social Protection</Link></li>
+          </ul>
+              </li>
+              <hr/>
         <li className="nav-item dropdown mx-1">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Our Initiatives
@@ -122,7 +142,7 @@ function Header() {
               </li><hr/>
               <li className="nav-item d-flex">
               <Link className='me-4 nav-link fs-6' href="/contact-us">Contact Us</Link>
-              <SearchModal/>
+              {/* <SearchModal/> */}
         </li>
         <li>
           
