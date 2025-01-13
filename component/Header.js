@@ -32,9 +32,9 @@ function Header() {
           Coalitions
           </a>
                 <ul className="dropdown-menu">
-                  <li><Link className='dropdown-item fs-6' href="https://www.cphcalliance.org/" target='_blank'>CPHC</Link></li>
+                  <li><Link className='dropdown-item fs-6' href="https://www.cphcalliance.org/" target='_blank'>CPHC - Comprehensive Primary Health Care</Link></li>
                   <li><hr class="dropdown-divider"/></li>
-                  <li><Link target='_blank' className='dropdown-item fs-6' href="http://social-protection.communityactioncollab.org/">Social Protection</Link></li>
+                  <li><Link target='_blank' className='dropdown-item fs-6' href="http://social-protection.communityactioncollab.org/">SETU - Social Protection Coalition</Link></li>
           </ul>
               </li>
         <li className="nav-item dropdown mx-1">
@@ -105,9 +105,9 @@ function Header() {
           Coalitions
           </a>
                 <ul className="dropdown-menu">
-                  <li><Link className='dropdown-item fs-6' href="https://www.cphcalliance.org/" target='_blank'>CPHC</Link></li>
+                  <li><Link className='dropdown-item fs-6' href="https://www.cphcalliance.org/" target='_blank'>CPHC - Comprehensive Primary Health Care</Link></li>
                   <li><hr class="dropdown-divider"/></li>
-                  <li><Link target='_blank' className='dropdown-item fs-6' href="http://social-protection.communityactioncollab.org/">Social Protection</Link></li>
+                  <li><Link target='_blank' className='dropdown-item fs-6' href="http://social-protection.communityactioncollab.org/">SETU - Social Protection Coalition</Link></li>
           </ul>
               </li>
               <hr/>
