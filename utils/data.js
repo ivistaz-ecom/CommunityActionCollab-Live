@@ -284,11 +284,11 @@ export const media = [
             "imageSrc": "/images/media5.png",
             "link": "https://indianexpress.com/article/lifestyle/art-and-culture/onward-together-photo-exhibition-pandemic-disparities-prejudice-marginalised-communities-8126601/"
           },
-          {
-            "title": "COVIDActionCollab and USAID Provide Critical COVID-19 Services to 10 Million",
-            "imageSrc": "/images/media6.png",
-            "link": "https://www.business-standard.com/content/press-releases-ani/covidactioncollab-usaid-provide-critical-covid-19-services-to-10-million-122031101010_1.html"
-          }
+        //   {
+        //     "title": "COVIDActionCollab and USAID Provide Critical COVID-19 Services to 10 Million",
+        //     "imageSrc": "/images/media6.png",
+        //     "link": "https://www.business-standard.com/content/press-releases-ani/covidactioncollab-usaid-provide-critical-covid-19-services-to-10-million-122031101010_1.html"
+        //   }
      
 
       

@@ -7,7 +7,7 @@ import { Tab, Tabs } from 'react-bootstrap';
 function Ourvision() {
   const teamMembers = [
     
-    { name: 'Arvind Kumar Pandian', role: 'Project Manager, Strategic Partnerships, USAID', image: './images/arvind_kumar.jpg' },
+    { name: 'Arvind Kumar Pandian', role: 'Senior Public Health Professional', image: './images/arvind_kumar.jpg' },
     { name: 'Deepali Khanna', role: 'Managing Director, Asia Regional Office, The Rockefeller Foundation', image: '/images/deepali.png' },
     { name: 'Madan Padaki', role: 'Entrepreneur, Co-Founder; 1Bridge, Global Alliance for Mass Entrepreneurship (GAME)', image: '/images/madan-1.png' },
     { name: 'N. Raghunathan', role: 'Founder, Catalyst Group', image: '/images/n.rahunathan.png' },
@@ -20,7 +20,7 @@ function Ourvision() {
     { name: 'Moutushi Sengupta', role: 'Chief of Capital Mobilization, AVPN; Former Director, India at MacArthur Foundation', image: '/images/motushi.jpg' },
     { name: 'Hari Krishna N', role: 'Senior Advisor - Resilience, Climate Change, Anticipatory Action and HDP Nexus, World Food Programme', image: '/images/hari.jpg' },
     { name: 'Gayathri Vasudevan', role: 'Chairperson, LabourNet Services', image: '/images/gayatri.jpg' },
-    { name: 'Dr Neeta Rao', role: 'Senior Health Lead, USAID, India', image: '/images/Dr-Neeta-Rao.jpeg' },
+    { name: 'Dr Neeta Rao', role: 'Senior Health Professional (formerly worked with World Health Organisation and the Ministry of Health and Family Welfare)', image: '/images/Dr-Neeta-Rao.jpeg' },
     { name: 'CS Reddy', role: 'Founder and CEO, Mahila Abhivruddhi Society, Andhra Pradesh (APMAS)  and President, Sadhikaratha Foundation', image: '/images/cs-reddy.jpg' },
     // Add more team members as needed
   ];

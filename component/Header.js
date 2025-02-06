@@ -58,7 +58,7 @@ function Header() {
                   Coalitions
                 </a>
                 <ul className="dropdown-menu">
-                  <li>
+                  {/* <li>
                     <Link
                       className="dropdown-item fs-6"
                       href="https://www.cphcalliance.org/"
@@ -66,10 +66,10 @@ function Header() {
                     >
                       CPHC - Comprehensive Primary Health Care
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <hr class="dropdown-divider" />
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       target="_blank"
@@ -176,7 +176,7 @@ function Header() {
                   Contact Us
                 </Link>
               </li>
-              <li>{/* <SearchModal/> */}</li>
+              {/* <li><SearchModal/></li> */}
             </ul>
           </div>
         </div>
@@ -245,7 +245,7 @@ function Header() {
                       Coalitions
                     </a>
                     <ul className="dropdown-menu">
-                      <li>
+                      {/* <li>
                         <Link
                           className="dropdown-item fs-6"
                           href="https://www.cphcalliance.org/"
@@ -253,10 +253,10 @@ function Header() {
                         >
                           CPHC - Comprehensive Primary Health Care
                         </Link>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <hr class="dropdown-divider" />
-                      </li>
+                      </li> */}
                       <li>
                         <Link
                           target="_blank"
