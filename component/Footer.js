@@ -35,7 +35,7 @@ function Footer() {
                 <li><Link target='_blank' href='https://social-protection.communityactioncollab.org/' className='Menu_footer fs-6 fw-light'> Social Protection</Link></li>
                 <li><Link href='/shilp' className='Menu_footer fs-6 fw-light'> Shilp</Link></li>
                 <li><Link href='/economic-resilience' className='Menu_footer fs-6 fw-light'> Economic Resilience</Link> </li>
-                <li><Link href='https://covidactioncollab.org/vaxnow/' className='Menu_footer fs-6 fw-light'>  Special Focus Areas (VaxNow)</Link> </li>
+                {/* <li><Link href='https://covidactioncollab.org/vaxnow/' className='Menu_footer fs-6 fw-light'>  Special Focus Areas (VaxNow)</Link> </li> */}
                  <li> <Link href='/invest-for-impact-2024' className='Menu_footer fs-6 fw-light'> Invest For Impact 2024</Link></li>
                  <li><Link className='Menu_footer fs-6 fw-light' href="https://www.precisionhealth.in/" target='_blank'>Precision Health</Link></li>
             </ul>

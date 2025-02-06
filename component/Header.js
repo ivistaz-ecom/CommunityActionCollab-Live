@@ -111,7 +111,7 @@ function Header() {
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       className="dropdown-item fs-6"
                       href="https://covidactioncollab.org/vaxnow/"
@@ -122,7 +122,7 @@ function Header() {
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       className="dropdown-item fs-6"
@@ -311,7 +311,7 @@ function Header() {
                       <li>
                         <hr class="dropdown-divider" />
                       </li>
-                      <li>
+                      {/* <li>
                         <Link
                           className="dropdown-item fs-6"
                           href="https://covidactioncollab.org/vaxnow/"
@@ -322,7 +322,7 @@ function Header() {
                       </li>
                       <li>
                         <hr class="dropdown-divider" />
-                      </li>
+                      </li> */}
                       <li>
                         <Link
                           className="dropdown-item fs-6"
