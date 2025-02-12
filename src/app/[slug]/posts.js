@@ -109,7 +109,7 @@ const Posts = ({ slug }) => {
           <Container fluid className="impact_post">
             <Row>
               <Col key={item.id}>
-                <p>Impact Stories </p>
+                <p>Impact Stories</p>
                 <h1 className="post_title" dangerouslySetInnerHTML={{__html:item.title.rendered}}/>
               </Col>
             </Row>
@@ -118,7 +118,7 @@ const Posts = ({ slug }) => {
             <Row className="d-flex justify-content-center">
               <Col lg={6} className="g-0">
               {item.acf && item.acf.banner_image && item.acf.banner_image.url && (
-                  <Image src={item.acf.banner_image.url} className=" w-100" alt={item.title.rendered} width={400} height={400} />
+                  <Image src={item.acf.banner_image.url} className=" w-100 h-auto" alt={item.title.rendered} width={400} height={400} />
                 )}
               </Col>
             </Row>
