@@ -79,6 +79,18 @@ function Header() {
                       SETU - Social Protection Coalition
                     </Link>
                   </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <Link
+                      target="_blank"
+                      className="dropdown-item fs-6"
+                      href="https://gha.communityactioncollab.org/"
+                    >
+                      GHA - Green Health Alliance
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li className="nav-item dropdown mx-1">
@@ -264,6 +276,18 @@ function Header() {
                           href="http://social-protection.communityactioncollab.org/"
                         >
                           SETU - Social Protection Coalition
+                        </Link>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <Link
+                          target="_blank"
+                          className="dropdown-item fs-6"
+                          href="https://gha.communityactioncollab.org/"
+                        >
+                          GHA - Green Health Alliance
                         </Link>
                       </li>
                     </ul>
