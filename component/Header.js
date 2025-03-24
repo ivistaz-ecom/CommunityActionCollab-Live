@@ -176,7 +176,7 @@ function Header() {
                       Media
                     </Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
@@ -186,7 +186,7 @@ function Header() {
                     >
                       Blogs
                     </Link>
-                  </li> */}
+                  </li>
                 </ul>
               </li>
               <li className="nav-item">
@@ -400,7 +400,7 @@ function Header() {
                           Media
                         </Link>
                       </li>
-                      {/* <li>
+                      <li>
                         <hr class="dropdown-divider" />
                       </li>
                       <li>
@@ -410,7 +410,7 @@ function Header() {
                         >
                           Blogs
                         </Link>
-                      </li> */}
+                      </li>
                     </ul>
                   </li>
                   <hr />
