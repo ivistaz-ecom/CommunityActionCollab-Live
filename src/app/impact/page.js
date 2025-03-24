@@ -8,7 +8,7 @@ import Seo from '../../../component/Seo'
 
 const title= 'Supporting last mile to overcome humanitarian crises'
   const description = 'The impact that we have facilitated through our partnerships provided relief and helped vulnerable communities, front line workers and healthcare providers bounce back from humanitarian crises. Read more.'
-  const url = 'https://communityactioncollab.org/impact'
+  const url = 'impact'
   const banner ="/images/Highcompressed_712800817.png"
 
 function Impact() {

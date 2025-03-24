@@ -1,6 +1,7 @@
 {
-    "SERVER_URL": "https://docs.communityactioncollab.org/wp-json/wp/v2/",
+    "siteUrl": "https://docs.communityactioncollab.org/wp-json/wp/v2/",
     "SERVER_FROM": "https://docs.communityactioncollab.org/wp-json/",
-    "mainWebUrl" : "https://communityactioncollab.org"
+    "mainWebUrl" : "https://communityactioncollab.org",
+    "SERVER" : "58" 
 
 }

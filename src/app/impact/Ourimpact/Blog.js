@@ -40,7 +40,7 @@ const Blog = () => {
     const offset = (pageNum - 1) * perPage;
     setLoading(true);
 
-    let url = `${configData.SERVER_URL}posts?_embed&per_page=${perPage}&offset=${offset}`;
+    let url = `${configData.siteUrl}posts?_embed&per_page=${perPage}&offset=${offset}`;
 
     if (newCat !== undefined) {
       url += `&categories=${newCat}`;
