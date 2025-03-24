@@ -120,6 +120,21 @@ const RecentBlogs = () => {
                           className="text-muted post-content-recent"
                           dangerouslySetInnerHTML={{ __html: post.excerpt }}
                         ></div>
+                           <div className="mt-3 pb-4 px-">
+                    <Link
+                      href={`/blogs/${post.slug}`}
+                      passHref
+                      className="text-decoration-none"
+                    >
+                      <Button
+                        variant=""
+                        className=" d-flex align-items-center border-read-more"
+                      >
+                        Read More
+                        <FiArrowRight className="ms-2" />
+                      </Button>
+                    </Link>
+                  </div>
                       </Link>
                     </Col>
                   </Row>
