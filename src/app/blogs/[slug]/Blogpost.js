@@ -102,10 +102,10 @@ const Posts = ({ slug }) => {
 
       {post && (
         <div>
-          <Container fluid className="impact_post">
+          <Container fluid className="impact_post d-flex flex-column justify-content-center text-center">
             <Row>
               <Col>
-                <p>Impact Stories</p>
+                {/* <p>Impact Stories</p> */}
                 <h1
                   className="post_title"
                   dangerouslySetInnerHTML={{ __html: post.title.rendered }}
