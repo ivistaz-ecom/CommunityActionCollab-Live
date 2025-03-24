@@ -19,7 +19,7 @@ import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 const RecentBlogs = () => {
   const siteUrl = ConfigData.wpApiUrl;
   const serverUrl = ConfigData.SERVER;
-  const categoryId = 105;
+  const categoryId = 107;
 
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
