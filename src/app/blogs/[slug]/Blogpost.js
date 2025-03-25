@@ -54,6 +54,12 @@ const Posts = ({ slug }) => {
   }
 
   const post = data.length > 0 ? data[0] : null;
+  const formatDate = (date) => {
+    const d = new Date(date);
+    const options = { year: "2-digit", month: "long", day: "2-digit" };
+    return d.toLocaleDateString("en-US", options);
+  };
+  
 
   return (
     <>
@@ -112,6 +118,21 @@ const Posts = ({ slug }) => {
                 />
               </Col>
             </Row>
+            {post.acf.blog_author_name && (
+  <Row>
+    <Col className="d-flex justify-content-start px-5 pt-3 text-white fs-5">
+      <p>By @</p>
+      <p className="text-start" dangerouslySetInnerHTML={{ __html: post.acf.blog_author_name }} />
+    </Col>
+  </Row>
+)}
+
+              <Row>
+                <Col className="d-flex justify-content-end flex- align-items-end px-5 pt-2 text-white fs-5">
+                <p className="text-end">{formatDate(post.date)}</p>
+
+                </Col>
+              </Row>
           </Container>
 
           <Container fluid className="blog_post_content">
