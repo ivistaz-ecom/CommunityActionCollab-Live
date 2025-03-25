@@ -105,7 +105,7 @@ const Blogs = ({ categoryId = 105 }) => {
                           lineHeight: "1.6",
                         }}
                       >
-                        {post.excerpt}
+                        <span  dangerouslySetInnerHTML={{ __html: post.excerpt }}/>
                       </Card.Text>
                     </Card.Body>
                   </div>

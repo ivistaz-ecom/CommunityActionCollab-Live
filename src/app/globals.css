@@ -608,7 +608,7 @@ p.p-partner {
   text-shadow: 0px 4px 0px #000000;
 }
 .middle {
-  height: 290px;
+  /* height: 290px; */
 }
 .t-volunteer {
   color: #000000;
@@ -2050,6 +2050,6 @@ li button {
 
 @media (max-width: 768px) {
   .stories-text {
-    margin-top: 300px;
+    /* margin-top: 300px; */
   }
 }
