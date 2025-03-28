@@ -57,9 +57,10 @@ const Posts = ({ slug }) => {
   const post = data.length > 0 ? data[0] : null;
   const formatDate = (date) => {
     const d = new Date(date);
-    const options = { year: "2-digit", month: "long", day: "2-digit" };
+    const options = { year: "numeric", month: "long", day: "2-digit" };
     return d.toLocaleDateString("en-US", options);
   };
+  
 
   return (
     <>

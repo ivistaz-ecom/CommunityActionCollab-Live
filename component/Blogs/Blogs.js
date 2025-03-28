@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "../Header";
-import Banner from "@/app/impact/Ourimpact/Banner";
+import Banner from "../../component/Blogs/Banner";
 import ConfigData from "../../config.json";
 import { FiArrowRight } from "react-icons/fi";
 import RecentBlogs from "./RecentBlogs";
