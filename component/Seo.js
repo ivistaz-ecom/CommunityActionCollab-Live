@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Script from "next/script";
 import ConfigData from "../config.json";
-function NextSeo({ title, description, path, metaImage }) {
+function Seo({ title, description, path, metaImage }) {
   return (
     <>
       <head>
@@ -47,4 +47,4 @@ function NextSeo({ title, description, path, metaImage }) {
   );
 }
 
-export default NextSeo;
+export default Seo;

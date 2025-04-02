@@ -16,6 +16,7 @@ import { FaTelegram, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import ConfigData from "../../../../config.json";
 import PageNotFound from "../../../../component/pageNotFound";
 import Script from "next/script";
+import { NextSeo } from "next-seo";
 
 const formatDate = (date) => {
   const year = new Date(date).getFullYear();
@@ -67,6 +68,7 @@ const Posts = ({ slug }) => {
       <Header />
 
       {post && (
+        
         <head>
           <meta charSet="utf-8" />
           <title
@@ -92,7 +94,7 @@ const Posts = ({ slug }) => {
             content={`${ConfigData.mainWebUrl}/${post.slug}`}
           />
           <meta property="og:site_name" content={post.acf.meta_title} />
-          <meta property="og:image" content="/images/banner_shilp.png" />
+          <meta property="og:image" content={post.acf.banner_image.url} />
           <meta name="twitter:card" content="summary_large_image" />
           <script
             type="application/ld+json"
