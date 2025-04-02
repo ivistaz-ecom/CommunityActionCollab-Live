@@ -16,7 +16,6 @@ import { FaTelegram, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import ConfigData from "../../../../config.json";
 import PageNotFound from "../../../../component/pageNotFound";
 import Script from "next/script";
-import { NextSeo } from "next-seo";
 
 const formatDate = (date) => {
   const year = new Date(date).getFullYear();
