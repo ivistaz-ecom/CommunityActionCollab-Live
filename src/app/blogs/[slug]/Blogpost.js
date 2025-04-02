@@ -92,7 +92,7 @@ const Posts = ({ slug }) => {
             content={`${ConfigData.mainWebUrl}/${post.slug}`}
           />
           <meta property="og:site_name" content={post.acf.meta_title} />
-          <meta property="og:image" content={post.acf.meta_image} />
+          <meta property="og:image" content="/images/banner_shilp.png" />
           <meta name="twitter:card" content="summary_large_image" />
           <script
             type="application/ld+json"
