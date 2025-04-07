@@ -255,6 +255,11 @@ export const slider = {
 export const media = [
        
           {
+            "title": "Deepening access to social protection for India’s vulnerable",
+            "imageSrc": "images/nirmala.jpeg",
+            "link": "https://www.hindustantimes.com/ht-insight/economy/deepening-access-to-social-protection-for-india-s-vulnerable-101743754439134.html"
+          },
+          {
             "title": "An initiative to build economic resilience among Odisha’s linguistic minority fishing community",
             "imageSrc": "images/media.png",
             "link": "https://www.thehindu.com/society/an-initiative-to-build-economic-resilience-among-odishas-liguistic-minority-fishing-community/article67100745.ece"
