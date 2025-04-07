@@ -46,11 +46,11 @@ const RecentBlogs = () => {
             excerpt: post.excerpt.rendered.replace(/<[^>]*>?/gm, ""), // Remove HTML tags
             imageUrl,
             slug: post.slug,
+            media_link: post.acf?.media_link || null,
           };
         });
 
-        // Only show the latest 4 blogs
-        setData(formattedData.slice(0, 4));
+        setData(formattedData.slice(0, 4)); // Only show the latest 4 blogs
       } catch (error) {
         console.error("Error fetching posts:", error);
       } finally {
@@ -61,26 +61,64 @@ const RecentBlogs = () => {
     if (categoryId) fetchPosts();
   }, [siteUrl, serverUrl, categoryId]);
 
+  const handlePrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.prev();
+    }
+  };
+
+  const handleNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
+  };
+
   return (
     <Container className="mx-auto">
       <div className="pb-5">
         {isLoading ? (
           <div className="d-flex justify-content-center align-items-center">
-             <Container className="d-flex justify-content-center gap-3">
-      <Card className="border-2 p-4 mt-4 animate-pulse">
-        <Row className="align-items-center">
-          <Col lg="6" className="d-flex justify-content-center">
-            <div style={{ backgroundColor: '#746C6C', height: '160px', width: '384px' }} />
-          </Col>
-          <Col lg="6">
-            <div className="mb-2" style={{ height: '12px', width: '384px', backgroundColor: '#B9B9B9' }} />
-            <div className="mb-2" style={{ height: '12px', width: '320px', backgroundColor: '#B9B9B9' }} />
-            <div className="mb-2" style={{ height: '12px', width: '288px', backgroundColor: '#B9B9B9' }} />
-          </Col>
-        </Row>
-      </Card>
-    </Container>
-    
+            <Container className="d-flex justify-content-center gap-3">
+              <Card className="border-2 p-4 mt-4 animate-pulse">
+                <Row className="align-items-center">
+                  <Col lg="6" className="d-flex justify-content-center">
+                    <div
+                      style={{
+                        backgroundColor: "#746C6C",
+                        height: "160px",
+                        width: "384px",
+                      }}
+                    />
+                  </Col>
+                  <Col lg="6">
+                    <div
+                      className="mb-2"
+                      style={{
+                        height: "12px",
+                        width: "384px",
+                        backgroundColor: "#B9B9B9",
+                      }}
+                    />
+                    <div
+                      className="mb-2"
+                      style={{
+                        height: "12px",
+                        width: "320px",
+                        backgroundColor: "#B9B9B9",
+                      }}
+                    />
+                    <div
+                      className="mb-2"
+                      style={{
+                        height: "12px",
+                        width: "288px",
+                        backgroundColor: "#B9B9B9",
+                      }}
+                    />
+                  </Col>
+                </Row>
+              </Card>
+            </Container>
           </div>
         ) : (
           <Container>
@@ -93,7 +131,7 @@ const RecentBlogs = () => {
             >
               {data.map((post) => (
                 <Carousel.Item key={post.id}>
-                  <Row className="">
+                  <Row>
                     {/* Left Side - Image */}
                     <Col md={6} className="p-0">
                       <Image
@@ -110,32 +148,47 @@ const RecentBlogs = () => {
                       md={6}
                       className="p-4 d-flex flex-column justify-content-center"
                     >
-                      <Link href={`/blogs/${post.slug}`}>
-                        <h3
-                          className="mb-3 fw-bold text-black"
-                          dangerouslySetInnerHTML={{ __html: post.title }}
-                        ></h3>
+                      <h3
+                        className="mb-3 fw-bold text-black"
+                        dangerouslySetInnerHTML={{ __html: post.title }}
+                      ></h3>
 
-                        <div
-                          className="text-muted post-content-recent"
-                          dangerouslySetInnerHTML={{ __html: post.excerpt }}
-                        ></div>
-                           <div className="mt-3 pb-4 px-">
-                    <Link
-                      href={`/blogs/${post.slug}`}
-                      passHref
-                      className="text-decoration-none"
-                    >
-                      <Button
-                        variant=""
-                        className=" d-flex align-items-center border-read-more"
-                      >
-                        Read More
-                        <FiArrowRight className="ms-2" />
-                      </Button>
-                    </Link>
-                  </div>
-                      </Link>
+                      <div
+                        className="text-muted post-content-recent"
+                        dangerouslySetInnerHTML={{ __html: post.excerpt }}
+                      ></div>
+
+                      <div className="mt-3 pb-4">
+                        {post.media_link ? (
+                          <a
+                            href={post.media_link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-decoration-none"
+                          >
+                            <Button
+                              variant=""
+                              className="d-flex align-items-center border-read-more"
+                            >
+                              Read More
+                              <FiArrowRight className="ms-2" />
+                            </Button>
+                          </a>
+                        ) : (
+                          <Link
+                            href={`/blogs/${post.slug}`}
+                            className="text-decoration-none"
+                          >
+                            <Button
+                              variant=""
+                              className="d-flex align-items-center border-read-more"
+                            >
+                              Read More
+                              <FiArrowRight className="ms-2" />
+                            </Button>
+                          </Link>
+                        )}
+                      </div>
                     </Col>
                   </Row>
                 </Carousel.Item>
@@ -149,14 +202,14 @@ const RecentBlogs = () => {
           <Button
             variant="light"
             className="border rounded-0 shadow"
-            onClick={() => carouselRef.current.prev()}
+            onClick={handlePrev}
           >
             <LuArrowLeft size={24} />
           </Button>
           <Button
             variant="light"
             className="border rounded-0 shadow"
-            onClick={() => carouselRef.current.next()}
+            onClick={handleNext}
           >
             <LuArrowRight size={24} />
           </Button>

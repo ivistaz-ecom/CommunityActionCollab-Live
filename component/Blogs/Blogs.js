@@ -32,9 +32,9 @@ const Blogs = ({ categoryId = 105 }) => {
             excerpt: post.excerpt.rendered.replace(/<[^>]*>?/gm, ""),
             imageUrl,
             slug: post.slug,
+            media_link: post.acf.media_link,
           };
         });
-
         setPosts(formattedData);
       } catch (error) {
         console.error("Error fetching posts:", error);
@@ -105,24 +105,42 @@ const Blogs = ({ categoryId = 105 }) => {
                           lineHeight: "1.6",
                         }}
                       >
-                        <span  dangerouslySetInnerHTML={{ __html: post.excerpt }}/>
+                        <span
+                          dangerouslySetInnerHTML={{ __html: post.excerpt }}
+                        />
                       </Card.Text>
                     </Card.Body>
                   </div>
                   <div className="mt-3 pb-4 px-3">
-                    <Link
-                      href={`/blogs/${post.slug}`}
-                      passHref
-                      className="text-decoration-none"
-                    >
-                      <Button
-                        variant=""
-                        className=" d-flex align-items-center border-read-more"
+                    {post.media_link ? (
+                      <a
+                        href={post.media_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-decoration-none"
                       >
-                        Read More
-                        <FiArrowRight className="ms-2" />
-                      </Button>
-                    </Link>
+                        <Button
+                          variant=""
+                          className="d-flex align-items-center border-read-more"
+                        >
+                          Read More
+                          <FiArrowRight className="ms-2" />
+                        </Button>
+                      </a>
+                    ) : (
+                      <Link
+                        href={`/blogs/${post.slug}`}
+                        className="text-decoration-none"
+                      >
+                        <Button
+                          variant=""
+                          className="d-flex align-items-center border-read-more"
+                        >
+                          Read More
+                          <FiArrowRight className="ms-2" />
+                        </Button>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </Card>
