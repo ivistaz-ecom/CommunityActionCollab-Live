@@ -60,14 +60,12 @@ const Posts = ({ slug }) => {
     const options = { year: "numeric", month: "long", day: "2-digit" };
     return d.toLocaleDateString("en-US", options);
   };
-  
 
   return (
     <>
       <Header />
 
       {post && (
-        
         <head>
           <meta charSet="utf-8" />
           <title
@@ -134,10 +132,10 @@ const Posts = ({ slug }) => {
                 />
               </Col>
             </Row>
-            {post.acf.blog_author_name && (
+            {/* {post.acf.blog_author_name && ( */}
               <Row>
                 <Col className="d-flex justify-content-start pt-3 text-white fs-5">
-                  <p className="px-2">By </p>
+                  {/* <p className="px-2">By </p> */}
                   <p
                     className="text-start"
                     dangerouslySetInnerHTML={{
@@ -146,7 +144,7 @@ const Posts = ({ slug }) => {
                   />
                 </Col>
               </Row>
-            )}
+            {/* )} */}
 
             <Row>
               <Col className="d-flex justify-content-end  pt-2 text-white fs-5">
@@ -170,7 +168,7 @@ const Posts = ({ slug }) => {
               </Col>
             </Row>
             <Row className="post_contener">
-              <Col lg={6} className="blog_post">
+              <Col lg={6} sm={12} className="blog_post">
                 <p
                   dangerouslySetInnerHTML={{ __html: post.content.rendered }}
                 ></p>

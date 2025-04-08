@@ -215,7 +215,7 @@ function Header() {
       >
         <div class="offcanvas-header">
           <Image
-            src="./images/cac_Logo.svg"
+            src="/images/cac_Logo.svg"
             width={200}
             height={50}
             alt="cac log"

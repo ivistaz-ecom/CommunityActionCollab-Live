@@ -152,6 +152,21 @@ nav.cac_main {
   padding: 60px 60px !important;
   height: 250px !important;
 }
+.impact_post.container-fluid {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #1c7c9cf0 28%, #fd9c00e0 91%);
+  padding: 60px 60px !important;
+  height: 250px !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .impact_post.container-fluid {
+    padding: 30px 20px !important;
+    height: auto !important;
+  }
+}
+
 
 .p-banner {
   color: #000;
@@ -236,6 +251,22 @@ img.banner_image {
   position: absolute !important;
   top: 434px;
   right: 281px;
+}
+@media (max-width: 768px) {
+.social-share {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px 0px 20px 0px;
+  border-radius: 40px;
+  width: 60px;
+  color: #1c7c9c;
+  size: 20px;
+  line-height: 40px;
+  position: absolute !important;
+  top: 373px;
+  right: 184px;
+}
 }
 
 .main-banner {
