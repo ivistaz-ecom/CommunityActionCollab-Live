@@ -2,6 +2,13 @@ import React from 'react';
 import Posts from './Blogpost';
 import { headers } from 'next/headers';
 
+function decodeHtmlEntities(text) {
+  if (!text) return '';
+  const textarea = document.createElement('textarea');
+  textarea.innerHTML = text;
+  return textarea.value;
+}
+
 // This function generates metadata for the page
 export async function generateMetadata({ params }) {
   try {
@@ -34,29 +41,26 @@ export async function generateMetadata({ params }) {
     const canonicalUrl = `${protocol}://${domain}/blogs/${params.slug}`;
     
     // Clean up the title and description
-    const title = post.acf?.meta_title || post.title.rendered.replace(/<[^>]*>/g, '');
-    const description = post.acf?.meta_descriptions || post.excerpt.rendered.replace(/<[^>]*>/g, '').slice(0, 160);
+    const title = post.acf.meta_title || post.title.rendered.replace(/<[^>]*>/g, '');
+    const description = post.acf.meta_descriptions || post.excerpt.rendered.replace(/<[^>]*>/g, '').slice(0, 160);
     
-    // Get the featured image
-    const image = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 
+    // Get the featured image or banner image
+    const image = post.acf.banner_image?.url || 
+                 post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 
                  '/images/default-blog-image.jpg';
-    
-    // Format the publication date
-    const publishDate = new Date(post.date).toISOString();
-    const modifiedDate = post.modified ? new Date(post.modified).toISOString() : publishDate;
-    
-    // Create schema markup
+
+    // Create schema.org structured data using the exact format provided
     const schema = {
-      "@context": "https://schema.org",
+      "@context": "https://schema.org/",
       "@type": "Article",
       "headline": title,
       "description": description,
       "image": image,
-      "datePublished": publishDate,
-      "dateModified": modifiedDate,
+      "datePublished": post.date,
+      "dateModified": post.modified,
       "author": {
         "@type": "Person",
-        "name": post.acf?.blog_author_name || "Community Action Collab"
+        "name": post.acf.blog_author_name || "Community Action Collab"
       },
       "publisher": {
         "@type": "Organization",
@@ -76,13 +80,16 @@ export async function generateMetadata({ params }) {
       title,
       description,
       alternates: {
-        canonical: canonicalUrl,
+        // Removing explicit canonical URL as it's handled by metadataBase
       },
       openGraph: {
         title,
         description,
         url: canonicalUrl,
-        siteName: 'Community Action Collab',
+        type: 'article',
+        publishedTime: post.date,
+        modifiedTime: post.modified,
+        authors: [post.acf.blog_author_name || 'Community Action Collab'],
         images: [
           {
             url: image,
@@ -91,17 +98,13 @@ export async function generateMetadata({ params }) {
             alt: title,
           },
         ],
-        locale: 'en_US',
-        type: 'article',
-        publishedTime: publishDate,
-        modifiedTime: modifiedDate,
-        authors: [post.acf?.blog_author_name || "Community Action Collab"],
       },
       twitter: {
         card: 'summary_large_image',
         title,
         description,
         images: [image],
+        creator: '@CommunityAction',
       },
       other: {
         'application/ld+json': JSON.stringify(schema),
@@ -111,19 +114,11 @@ export async function generateMetadata({ params }) {
     console.error('Error generating metadata:', error);
     return {
       title: 'Blog Post',
-      description: 'Community Action Collab blog post',
+      description: 'Read our latest blog post from Community Action Collab',
     };
   }
 }
 
-const Page = ({ params }) => {
-  const { slug } = params;
-
-  return (
-    <div>
-      <Posts slug={slug} />
-    </div>
-  );
-};
-
-export default Page;
+export default function BlogPage({ params }) {
+  return <Posts slug={params.slug} />;
+} 
