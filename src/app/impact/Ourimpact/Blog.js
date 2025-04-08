@@ -15,6 +15,9 @@ const Blog = () => {
   const [page, setPage] = useState(1); // Track the current page
   const [morePostsAvailable, setMorePostsAvailable] = useState(true);
 
+  // Replace this with your actual 'blogs' category ID
+  const excludedCategoryId = "105, 107";
+
   const communities = [
     { name: "Covid-response", value: "44" },
     { name: "Factory unorganised workers", value: "11" },
@@ -36,11 +39,12 @@ const Blog = () => {
   ];
 
   const postFetch = async (pageNum = 1) => {
-    const perPage = 10; // Number of posts per page
+    const perPage = 10;
     const offset = (pageNum - 1) * perPage;
     setLoading(true);
 
-    let url = `${configData.siteUrl}posts?_embed&per_page=${perPage}&offset=${offset}`;
+    // Exclude the "blogs" category unless a specific category is selected
+    let url = `${configData.siteUrl}posts?_embed&per_page=${perPage}&offset=${offset}&categories_exclude=${excludedCategoryId}`;
 
     if (newCat !== undefined) {
       url += `&categories=${newCat}`;
@@ -50,12 +54,10 @@ const Blog = () => {
     const newData = await response.json();
     setLoader(false);
 
-    // Check if there are more posts available
     if (newData.length < perPage) {
       setMorePostsAvailable(false);
     }
 
-    // Update state based on whether it's a new fetch or load more
     setData((prevData) =>
       pageNum === 1 ? newData : [...prevData, ...newData]
     );
@@ -65,7 +67,7 @@ const Blog = () => {
 
   const handleTabClick = (categoryId) => {
     setNewCat(categoryId);
-    setMorePostsAvailable(true); // Reset the flag when switching categories
+    setMorePostsAvailable(true);
     postFetch();
   };
 
@@ -138,7 +140,7 @@ const Blog = () => {
               </Col>
             ))}
           </Row>
-          {/* Loader */}
+
           {loading && (
             <div className="text-center mt-4">
               <RotatingLines
@@ -149,12 +151,10 @@ const Blog = () => {
                 strokeWidth="2"
                 animationDuration="0.75"
                 ariaLabel="rotating-lines-loading"
-                wrapperStyle={{}}
-                wrapperClass=""
               />
             </div>
           )}
-          {/* Load More Button */}
+
           {morePostsAvailable && (
             <div className="text-center mt-4 mb-5">
               <Button className="p-btn" onClick={handleLoadMore}>

@@ -40,6 +40,7 @@ const Posts = ({ slug }) => {
         } else {
           setData(result);
         }
+        console.log(result);
       } catch (error) {
         console.error("Error fetching data:", error.message);
       }
@@ -81,7 +82,7 @@ const Posts = ({ slug }) => {
             content={`${ConfigData.mainWebUrl}/blogs/${post.slug}`}
           />
           <meta property="og:site_name" content="Community Action Collab" />
-          <meta property="og:image" content={post.acf.banner_image.url} />
+          <meta property="og:image" content={post._embedded["wp:featuredmedia"][0].source_url} />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
 
@@ -92,7 +93,7 @@ const Posts = ({ slug }) => {
             name="twitter:description"
             content={post.acf.meta_descriptions}
           />
-          <meta name="twitter:image" content={post.acf.banner_image.url} />
+          <meta name="twitter:image" content={post._embedded["wp:featuredmedia"][0].source_url} />
 
           {/* Twitter Meta */}
           <meta name="twitter:card" content="summary_large_image" />
@@ -122,96 +123,64 @@ const Posts = ({ slug }) => {
         </head>
       )}
 
-      {post && (
-        <div>
-          <Container
-            fluid
-            className="impact_post d-flex flex-column justify-content-start text-start"
+{post && (
+  <Container fluid className="blog_post_content">
+    <Row className="d-flex justify-content-center">
+      <Col lg={6} className="g-0">
+        {post._embedded?.["wp:featuredmedia"]?.[0]?.source_url && (
+          <Image
+            src={post._embedded["wp:featuredmedia"][0].source_url}
+            className="w-100 h-auto"
+            alt={post.title.rendered}
+            width={400}
+            height={400}
+          />
+        )}
+      </Col>
+    </Row>
+    <Row className="post_contener">
+      <Col lg={6} sm={12} className="blog_post">
+        <p dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+      </Col>
+      <Col>
+        <div className="social-share">
+          <TwitterShareButton
+            url={`${ConfigData.mainWebUrl}/${slug}`}
+            title={post.title.rendered}
           >
-            <Row>
-              <Col>
-                <h1
-                  className="post_title"
-                  dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col className="d-flex justify-content-start pt-3 text-white fs-5">
-                <p
-                  className="text-start"
-                  dangerouslySetInnerHTML={{
-                    __html: post.acf.blog_author_name,
-                  }}
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col className="d-flex justify-content-end pt-2 text-white fs-5">
-                <p className="text-end">{formatDate(post.date)}</p>
-              </Col>
-            </Row>
-          </Container>
-
-          <Container fluid className="blog_post_content">
-            <Row className="d-flex justify-content-center">
-              <Col lg={6} className="g-0">
-                {post.acf?.banner_image?.url && (
-                  <Image
-                    src={post.acf.banner_image.url}
-                    className="w-100 h-auto"
-                    alt={post.title.rendered}
-                    width={400}
-                    height={400}
-                  />
-                )}
-              </Col>
-            </Row>
-            <Row className="post_contener">
-              <Col lg={6} sm={12} className="blog_post">
-                <p
-                  dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-                />
-              </Col>
-              <Col>
-                <div className="social-share">
-                  <TwitterShareButton
-                    url={`${ConfigData.mainWebUrl}/${slug}`}
-                    title={post.title.rendered}
-                  >
-                    <FaTwitter size={30} />
-                  </TwitterShareButton>
-                  <LinkedinShareButton
-                    url={`${ConfigData.mainWebUrl}/${slug}`}
-                    summary={post.title.rendered}
-                  >
-                    <FaLinkedin size={30} />
-                  </LinkedinShareButton>
-                  <TelegramShareButton
-                    url={`${ConfigData.mainWebUrl}/${slug}`}
-                    title={post.title.rendered}
-                  >
-                    <FaTelegram size={30} />
-                  </TelegramShareButton>
-                  <WhatsappShareButton
-                    url={`${ConfigData.mainWebUrl}/${slug}`}
-                    title={post.title.rendered}
-                  >
-                    <FaWhatsapp size={30} />
-                  </WhatsappShareButton>
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Col className="d-flex justify-content-center">
-                <Link href="/blogs" className="post_button">
-                  SEE ALL BLOGS
-                </Link>
-              </Col>
-            </Row>
-          </Container>
+            <FaTwitter size={30} />
+          </TwitterShareButton>
+          <LinkedinShareButton
+            url={`${ConfigData.mainWebUrl}/${slug}`}
+            summary={post.title.rendered}
+          >
+            <FaLinkedin size={30} />
+          </LinkedinShareButton>
+          <TelegramShareButton
+            url={`${ConfigData.mainWebUrl}/${slug}`}
+            title={post.title.rendered}
+          >
+            <FaTelegram size={30} />
+          </TelegramShareButton>
+          <WhatsappShareButton
+            url={`${ConfigData.mainWebUrl}/${slug}`}
+            title={post.title.rendered}
+          >
+            <FaWhatsapp size={30} />
+          </WhatsappShareButton>
         </div>
-      )}
+      </Col>
+    </Row>
+    <Row>
+      <Col className="d-flex justify-content-center">
+        <Link href="/blogs" className="post_button">
+          SEE ALL BLOGS
+        </Link>
+      </Col>
+    </Row>
+  </Container>
+)}
+
 
       <Footer />
     </>
