@@ -124,7 +124,37 @@ const Posts = ({ slug }) => {
       )}
 
 {post && (
-  <Container fluid className="blog_post_content">
+ <>
+  <Container
+            fluid
+            className="impact_post d-flex flex-column justify-content-start text-start"
+          >
+            <Row>
+              <Col>
+                <h1
+                  className="post_title"
+                  dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col className="d-flex justify-content-start pt-3 text-white fs-5">
+                <p
+                  className="text-start"
+                  dangerouslySetInnerHTML={{
+                    __html: post.acf.blog_author_name,
+                  }}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col className="d-flex justify-content-end pt-2 text-white fs-5">
+                <p className="text-end">{formatDate(post.date)}</p>
+              </Col>
+            </Row>
+          </Container>
+
+ <Container fluid className="blog_post_content">
     <Row className="d-flex justify-content-center">
       <Col lg={6} className="g-0">
         {post._embedded?.["wp:featuredmedia"]?.[0]?.source_url && (
@@ -179,6 +209,7 @@ const Posts = ({ slug }) => {
       </Col>
     </Row>
   </Container>
+ </>
 )}
 
 
