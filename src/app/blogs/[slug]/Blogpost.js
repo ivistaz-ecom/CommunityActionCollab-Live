@@ -5,23 +5,21 @@ import Header from "../../../../component/Header";
 import Footer from "../../../../component/Footer";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
+import { FaTelegram, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import ConfigData from "../../../../config.json";
+import PageNotFound from "../../../../component/pageNotFound";
+import Script from "next/script";
 import {
   TwitterShareButton,
   LinkedinShareButton,
   TelegramShareButton,
   WhatsappShareButton,
 } from "react-share";
-import { FaTelegram, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import ConfigData from "../../../../config.json";
-import PageNotFound from "../../../../component/pageNotFound";
-import Script from "next/script";
 
 const formatDate = (date) => {
-  const year = new Date(date).getFullYear();
-  const month = String(new Date(date).getMonth() + 1).padStart(2, "0");
-  const day = String(new Date(date).getDate()).padStart(2, "0");
-  return `${year}/${month}/${day}`;
+  const d = new Date(date);
+  const options = { year: "numeric", month: "long", day: "2-digit" };
+  return d.toLocaleDateString("en-US", options);
 };
 
 const Posts = ({ slug }) => {
@@ -50,16 +48,9 @@ const Posts = ({ slug }) => {
     fetchData();
   }, [slug]);
 
-  if (notFound) {
-    return <PageNotFound />;
-  }
+  if (notFound) return <PageNotFound />;
 
   const post = data.length > 0 ? data[0] : null;
-  const formatDate = (date) => {
-    const d = new Date(date);
-    const options = { year: "numeric", month: "long", day: "2-digit" };
-    return d.toLocaleDateString("en-US", options);
-  };
 
   return (
     <>
@@ -68,19 +59,18 @@ const Posts = ({ slug }) => {
       {post && (
         <head>
           <meta charSet="utf-8" />
-          <title
-            dangerouslySetInnerHTML={{ __html: post.acf.meta_title }}
-          ></title>
+          <title>{post.acf.meta_title}</title>
           <meta name="description" content={post.acf.meta_descriptions} />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="robots" content="index,follow" />
-          <link rel="icon" href="/images/cac_favicon-150x150.png" />
+
+          {/* Canonical */}
           <link
             rel="canonical"
             href={`${ConfigData.mainWebUrl}/blogs/${post.slug}`}
           />
+
+          {/* Open Graph Tags */}
           <meta property="og:locale" content="en_US" />
-          <meta property="og:type" content="website" />
+          <meta property="og:type" content="article" />
           <meta property="og:title" content={post.acf.meta_title} />
           <meta
             property="og:description"
@@ -88,22 +78,37 @@ const Posts = ({ slug }) => {
           />
           <meta
             property="og:url"
-            content={`${ConfigData.mainWebUrl}/${post.slug}`}
+            content={`${ConfigData.mainWebUrl}/blogs/${post.slug}`}
           />
-          <meta property="og:site_name" content={post.acf.meta_title} />
+          <meta property="og:site_name" content="Community Action Collab" />
           <meta property="og:image" content={post.acf.banner_image.url} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+
+          {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={post.acf.meta_title} />
+          <meta
+            name="twitter:description"
+            content={post.acf.meta_descriptions}
+          />
+          <meta name="twitter:image" content={post.acf.banner_image.url} />
+
+          {/* Twitter Meta */}
+          <meta name="twitter:card" content="summary_large_image" />
+
+          {/* JSON-LD Structured Data */}
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
                 "@type": "WebSite",
-                name: "Communtiy Action Collab",
+                name: "Community Action Collab",
                 url: `${ConfigData.mainWebUrl}`,
                 potentialAction: {
                   "@type": "SearchAction",
-                  target: `${ConfigData.mainWebUrl}/blogs/${slug}{search_term_string}`,
+                  target: `${ConfigData.mainWebUrl}/${slug}{search_term_string}`,
                   "query-input": "required name=search_term_string",
                 },
               }),
@@ -112,8 +117,8 @@ const Posts = ({ slug }) => {
           <Script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"
-          ></Script>
+            crossOrigin="anonymous"
+          />
         </head>
       )}
 
@@ -125,29 +130,24 @@ const Posts = ({ slug }) => {
           >
             <Row>
               <Col>
-                {/* <p>Impact Stories</p> */}
                 <h1
-                  className="post_title "
+                  className="post_title"
                   dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                 />
               </Col>
             </Row>
-            {/* {post.acf.blog_author_name && ( */}
-              <Row>
-                <Col className="d-flex justify-content-start pt-3 text-white fs-5">
-                  {/* <p className="px-2">By </p> */}
-                  <p
-                    className="text-start"
-                    dangerouslySetInnerHTML={{
-                      __html: post.acf.blog_author_name,
-                    }}
-                  />
-                </Col>
-              </Row>
-            {/* )} */}
-
             <Row>
-              <Col className="d-flex justify-content-end  pt-2 text-white fs-5">
+              <Col className="d-flex justify-content-start pt-3 text-white fs-5">
+                <p
+                  className="text-start"
+                  dangerouslySetInnerHTML={{
+                    __html: post.acf.blog_author_name,
+                  }}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col className="d-flex justify-content-end pt-2 text-white fs-5">
                 <p className="text-end">{formatDate(post.date)}</p>
               </Col>
             </Row>
@@ -171,38 +171,30 @@ const Posts = ({ slug }) => {
               <Col lg={6} sm={12} className="blog_post">
                 <p
                   dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-                ></p>
+                />
               </Col>
               <Col>
                 <div className="social-share">
                   <TwitterShareButton
-                    url={`${ConfigData.mainWebUrl}/${formatDate(
-                      post.date
-                    )}/${slug}`}
+                    url={`${ConfigData.mainWebUrl}/${slug}`}
                     title={post.title.rendered}
                   >
                     <FaTwitter size={30} />
                   </TwitterShareButton>
                   <LinkedinShareButton
-                    url={`${ConfigData.mainWebUrl}/${formatDate(
-                      post.date
-                    )}/${slug}`}
+                    url={`${ConfigData.mainWebUrl}/${slug}`}
                     summary={post.title.rendered}
                   >
                     <FaLinkedin size={30} />
                   </LinkedinShareButton>
                   <TelegramShareButton
-                    url={`${ConfigData.mainWebUrl}/${formatDate(
-                      post.date
-                    )}/${slug}`}
+                    url={`${ConfigData.mainWebUrl}/${slug}`}
                     title={post.title.rendered}
                   >
                     <FaTelegram size={30} />
                   </TelegramShareButton>
                   <WhatsappShareButton
-                    url={`${ConfigData.mainWebUrl}/${formatDate(
-                      post.date
-                    )}/${slug}`}
+                    url={`${ConfigData.mainWebUrl}/${slug}`}
                     title={post.title.rendered}
                   >
                     <FaWhatsapp size={30} />
