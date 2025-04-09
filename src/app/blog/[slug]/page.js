@@ -25,7 +25,7 @@ const generateSchemaMarkup = (post) => {
       name: "Your Organization Name",
       logo: {
         "@type": "ImageObject",
-        url: `${configData.mainWebUrl}/path-to-logo.png`,
+        url: `${configData.mainWebUrl}/images/cac_favicon-150x150.png`,
       },
     },
     image: {
