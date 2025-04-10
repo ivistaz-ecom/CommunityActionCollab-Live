@@ -1,16 +1,34 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Link from "next/link";
 import MyCarousel from "../CarouselForHeat/carousel";
 import { media, slider } from "../../../../utils/data";
 
 function Knowledgebase() {
+  const knowledgeBaseRef = useRef(null);
+  const mediaRef = useRef(null);
+  
+  useEffect(() => {
+    // Check if there's a section stored in sessionStorage
+    const section = sessionStorage.getItem('scrollToSection');
+    
+    if (section === 'base' && knowledgeBaseRef.current) {
+      knowledgeBaseRef.current.scrollIntoView({ behavior: 'smooth' });
+      // Clear the stored section after scrolling
+      sessionStorage.removeItem('scrollToSection');
+    } else if (section === 'media' && mediaRef.current) {
+      mediaRef.current.scrollIntoView({ behavior: 'smooth' });
+      // Clear the stored section after scrolling
+      sessionStorage.removeItem('scrollToSection');
+    }
+  }, []);
+
   return (
     <>
-      <Container id="base">
-        <Row>
+      <Container>
+        <Row ref={knowledgeBaseRef}>
           <Col>
             <h1 className="fs-1 pt-4 pb-4 fw-bold">Knowledge Base</h1>
           </Col>
@@ -27,9 +45,9 @@ function Knowledgebase() {
         </Row>
 
         {/* Media Section */}
-        <Row>
+        <Row ref={mediaRef}>
           <Col>
-            <h1 className="fs-1 pt-4 pb-4 fw-bold mt-5" id="media">
+            <h1 className="fs-1 pt-4 pb-4 fw-bold mt-5">
               Media
             </h1>
           </Col>

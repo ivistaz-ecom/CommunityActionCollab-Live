@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import SearchModal from "./SearchBar/SearchBar";
+import NavLink from "./NavLink";
+
 function Header() {
   return (
     <div>
@@ -86,7 +88,7 @@ function Header() {
                     <Link
                       target="_blank"
                       className="dropdown-item fs-6"
-                      href="https://gha.communityactioncollab.org/"
+                      href="http://www.greenhealthalliance.global/"
                     >
                       GHA - Green Health Alliance
                     </Link>
@@ -158,23 +160,17 @@ function Header() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link
-                      className="dropdown-item fs-6"
-                      href="/resource-hub/#base"
-                    >
+                    <NavLink href="/resource-hub">
                       Knowledgebase
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <Link
-                      className="dropdown-item fs-6"
-                      href="/resource-hub/#media"
-                    >
+                    <NavLink href="/resource-hub">
                       Media
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -296,7 +292,7 @@ function Header() {
                         <Link
                           target="_blank"
                           className="dropdown-item fs-6"
-                          href="https://gha.communityactioncollab.org/"
+                          href="http://www.greenhealthalliance.global/"
                         >
                           GHA - Green Health Alliance
                         </Link>
@@ -382,23 +378,17 @@ function Header() {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <Link
-                          className="dropdown-item fs-6"
-                          href="/resource-hub/#base"
-                        >
+                        <NavLink href="/resource-hub">
                           Knowledgebase
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
                         <hr class="dropdown-divider" />
                       </li>
                       <li>
-                        <Link
-                          className="dropdown-item fs-6"
-                          href="/resource-hub/#media"
-                        >
+                        <NavLink href="/resource-hub">
                           Media
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
                         <hr class="dropdown-divider" />

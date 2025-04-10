@@ -24,6 +24,7 @@ const formatDate = (date) => {
   return `${year}/${month}/${day}`;
 };
 
+const excludedCategoryId = "105, 107";
 const Posts = ({ slug }) => {
   const [data, setData] = useState([]);
   const [notFound, setNotFound] = useState(false);
@@ -32,7 +33,7 @@ const Posts = ({ slug }) => {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          `${configData.siteUrl}posts?_embed&slug=${slug}&production=${serverUrl}`
+          `${configData.siteUrl}posts?_embed&slug=${slug}&production=${serverUrl}&categories_exclude=${excludedCategoryId}`,
         );
         if (!res.ok) {
           throw new Error(`Failed to fetch data. Status: ${res.status}`);
