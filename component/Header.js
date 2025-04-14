@@ -88,7 +88,7 @@ function Header() {
                     <Link
                       target="_blank"
                       className="dropdown-item fs-6"
-                      href="http://www.greenhealthalliance.global/"
+                      href="https://greenhealthalliance.global/"
                     >
                       GHA - Green Health Alliance
                     </Link>
@@ -292,7 +292,7 @@ function Header() {
                         <Link
                           target="_blank"
                           className="dropdown-item fs-6"
-                          href="http://www.greenhealthalliance.global/"
+                          href="https://greenhealthalliance.global/"
                         >
                           GHA - Green Health Alliance
                         </Link>
