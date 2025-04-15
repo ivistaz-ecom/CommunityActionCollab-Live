@@ -1,4 +1,13 @@
 export const slider = {
+    static3: [
+        {
+            id: 1,
+            thumbnail: "/images/thumbnail-cphc.jpg",
+            title: "CPHC Exemplar Series Platforms to Enable CPHC - CMED Health as an Exemplar",
+            pdflink: "/CPHC-Exemplar Series.pdf",
+        },
+    ],
+    
     heatflyer: [
         {
             id: 1,
@@ -221,14 +230,6 @@ export const slider = {
             pdflink: "/Winter Advisory English 2024.pdf",
         },
     ],
-    // static3: [
-    //     {
-    //         id: 1,
-    //         thumbnail: "images/climate.png",
-    //         title: "Climate Advisory 2023 | Heat wave",
-    //         pdflink: "/Heatwave-Advisory-Note-Ganesh-A.pdf",
-    //     },
-    // ],
     
     // static4: [
     //     {
