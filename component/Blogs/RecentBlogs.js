@@ -15,6 +15,7 @@ import {
 } from "react-bootstrap";
 import Image from "next/image";
 import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
+import { useMediaQuery } from "react-responsive"; // Add this import
 
 const RecentBlogs = () => {
   const siteUrl = ConfigData.wpApiUrl;
@@ -25,6 +26,9 @@ const RecentBlogs = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const carouselRef = useRef(null);
+
+  // Media query to detect desktop screens
+  const isDesktop = useMediaQuery({ minWidth: 992 });
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -122,98 +126,100 @@ const RecentBlogs = () => {
           </div>
         ) : (
           <Container>
-            <Carousel
-              ref={carouselRef}
-              interval={3000}
-              controls={false}
-              indicators={false}
-              className="mt-4 border border-warning shadow-sm"
-            >
-              {data.map((post) => (
-                <Carousel.Item key={post.id}>
-                  <Row>
-                    {/* Left Side - Image */}
-                    <Col md={6} className="p-0">
-                      <Image
-                        width={500}
-                        height={400}
-                        src={post.imageUrl}
-                        alt={post.title}
-                        className="w-100 object-fit-cover"
-                      />
-                    </Col>
+          <Carousel
+  ref={carouselRef}
+  interval={isDesktop ? null : 3000} // Disable auto-slide on desktop
+  controls={false}
+  indicators={false}
+  className="mt-4 border border-warning shadow-sm"
+>
+  {data.map((post) => (
+    <Carousel.Item key={post.id}>
+      <Row>
+        {/* Left Side - Image */}
+        <Col md={6} className="p-0">
+          <Image
+            width={500}
+            height={400}
+            src={post.imageUrl}
+            alt={post.title}
+            className="w-100 object-fit-cover"
+          />
+        </Col>
 
-                    {/* Right Side - Content */}
-                    <Col
-                      md={6}
-                      className="p-4 d-flex flex-column justify-content-center"
-                    >
-                      <h3
-                        className="mb-3 fw-bold text-black"
-                        dangerouslySetInnerHTML={{ __html: post.title }}
-                      ></h3>
+        {/* Right Side - Content */}
+        <Col
+          md={6}
+          className="p-4 d-flex flex-column justify-content-center"
+        >
+          <h3
+            className="mb-3 fw-bold text-black"
+            dangerouslySetInnerHTML={{ __html: post.title }}
+          ></h3>
 
-                      <div
-                        className="text-muted post-content-recent"
-                        dangerouslySetInnerHTML={{ __html: post.excerpt }}
-                      ></div>
+          <div
+            className="text-muted post-content-recent"
+            dangerouslySetInnerHTML={{ __html: post.excerpt }}
+          ></div>
 
-                      <div className="mt-3 pb-4">
-                        {post.media_link ? (
-                          <a
-                            href={post.media_link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-decoration-none"
-                          >
-                            <Button
-                              variant=""
-                              className="d-flex align-items-center border-read-more"
-                            >
-                              Read More
-                              <FiArrowRight className="ms-2" />
-                            </Button>
-                          </a>
-                        ) : (
-                          <Link
-                            href={`/blogs/${post.slug}`}
-                            className="text-decoration-none"
-                          >
-                            <Button
-                              variant=""
-                              className="d-flex align-items-center border-read-more"
-                            >
-                              Read More
-                              <FiArrowRight className="ms-2" />
-                            </Button>
-                          </Link>
-                        )}
-                      </div>
-                    </Col>
-                  </Row>
-                </Carousel.Item>
-              ))}
-            </Carousel>
+          <div className="mt-3 pb-4">
+            {post.media_link ? (
+              <a
+                href={post.media_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-decoration-none"
+              >
+                <Button
+                  variant=""
+                  className="d-flex align-items-center border-read-more"
+                >
+                  Read More
+                  <FiArrowRight className="ms-2" />
+                </Button>
+              </a>
+            ) : (
+              <Link
+                href={`/blogs/${post.slug}`}
+                className="text-decoration-none"
+              >
+                <Button
+                  variant=""
+                  className="d-flex align-items-center border-read-more"
+                >
+                  Read More
+                  <FiArrowRight className="ms-2" />
+                </Button>
+              </Link>
+            )}
+          </div>
+        </Col>
+      </Row>
+    </Carousel.Item>
+  ))}
+</Carousel>
           </Container>
         )}
 
         {/* Custom Arrow Buttons */}
-        <div className="d-flex justify-content-center gap-0 mt-4">
-          <Button
-            variant="light"
-            className="border rounded-0 shadow"
-            onClick={handlePrev}
-          >
-            <LuArrowLeft size={24} />
-          </Button>
-          <Button
-            variant="light"
-            className="border rounded-0 shadow"
-            onClick={handleNext}
-          >
-            <LuArrowRight size={24} />
-          </Button>
-        </div>
+        {(isDesktop && data.length > 2) || !isDesktop ? (
+          <div className="d-flex justify-content-center gap-0 mt-4">
+            <Button
+              variant="light"
+              className="border rounded-0 shadow"
+              onClick={handlePrev}
+            >
+              <LuArrowLeft size={24} />
+            </Button>
+            <Button
+              variant="light"
+              className="border rounded-0 shadow"
+              onClick={handleNext}
+            >
+              <LuArrowRight size={24} />
+            </Button>
+          </div>
+        ) : null}
       </div>
     </Container>
   );
